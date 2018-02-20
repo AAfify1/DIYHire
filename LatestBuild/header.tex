@@ -162,13 +162,14 @@
 % -----------------------------------------------------------------------------------
 
 \newcommand{\ModuleTitle}{compgc22 Software Engineering}
-
+\newcommand{\ModuleCode}{COMPGC22}
 
 \newcommand{\AssignmentTitle}{Group A- DIY Tool Hire}
 \newcommand{\University}{University College London}
 \newcommand{\Faculty}{Faculty of Engineering Sciences}
 \newcommand{\UniCrest}{TempImg/logoucl.png}
-\newcommand{\UniLogo}{logoucl.png}%<<<<<<<<< Make Sure Files are in the Template
+\newcommand{\UniLogo}{TempImg/logoucl.png}
+\newcommand{\UniLogoHP}{TempImg/engLogo.jpg}%<<<<<<<<< Make Sure Files are in the Template
 \newcommand{\StudentNameA}{Ahmed Afify}
 
 \newcommand{\StudentNameB}{Gideon Acquaah-Harrison}
@@ -258,7 +259,7 @@
 \pagestyle{fancy}
 \lhead{\includegraphics[width = 0.15\textwidth]{\UniLogo}}
 % \chead{\AssignmentTitle}
-% \rhead{}
+\rhead{}
 \lfoot{\AssignmentTitle}
 \cfoot{}
 \rfoot{Page \thepage} %%%% note the footer is swapped when page numbering style changes
@@ -312,12 +313,15 @@
 % HEADING SECTION
 %----------------------------------------------------------------------------------------
     \usefont{OT1}{bch}{b}{n}
-    \normalfont \normalsize \textsc{\University} \\ [10pt]
-    \normalfont \normalsize \textsc{\Faculty} \\ [25pt]
+    % \normalfont \normalsize \textsc{\University} \\ [10pt]
+    % \normalfont \normalsize \textsc{\Faculty} \\ [25pt]
+    
 %----------------------------------------------------------------------------------------
 % LOGO SECTION - Adds Univeristy Crest to the Report
 %----------------------------------------------------------------------------------------
+    \includegraphics[width = 0.5\textwidth]{\UniLogoHP}\\[0.5cm]
     \includegraphics[width = 0.6\textwidth]{\UniCrest}\\[0.5cm]
+    
 %----------------------------------------------------------------------------------------
 % HEADING SECTION
 %----------------------------------------------------------------------------------------
