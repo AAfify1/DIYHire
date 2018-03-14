@@ -1,11 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                                                                      %
-%         Univesity College London Project LaTex Template            %
-%                                                                                      %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%   Author: Alex Charles           Email: aep.charles@gmail.com
-%
+
 % -----------------------------------------------------------------------------------
 %      PACKAGES & OTHER DOCUMENT CONFIGURATIONS
 % -----------------------------------------------------------------------------------
@@ -67,8 +60,8 @@
 \usepackage{amsfonts,amsthm} % Math packages
 % \usepackage{cite}
 \usepackage{csquotes}
-%    \MakeAutoQuote{‘}{’}
-%    \MakeAutoQuote*{“}{”} %corrects quote marks
+%    \MakeAutoQuote{â}{â}
+%    \MakeAutoQuote*{â}{â} %corrects quote marks
 \usepackage{enumitem} % resume numbered lists
 \usepackage{multicol} %for mulitple colums in lists
 \usepackage{booktabs} %<<<<<<<<< Table drawing package
@@ -167,22 +160,37 @@
 % -----------------------------------------------------------------------------------
 %                   NAMES & CLASS DEFINITION %<<<<<<<<< INSERT DETAILS HERE
 % -----------------------------------------------------------------------------------
-\newcommand{\AssignmentTitle}{IXN Website - Design and Implementation}
-\newcommand{\ModuleTitle}{compgc02 App Design}
-\newcommand{\DegreeTitle}{MSc Computer Science}
+
+\newcommand{\ModuleTitle}{compgc22 Software Engineering}
+\newcommand{\ModuleCode}{COMPGC22}
+
+\newcommand{\AssignmentTitle}{DIY Tool Hire Service}
 \newcommand{\University}{University College London}
 \newcommand{\Faculty}{Faculty of Engineering Sciences}
-\newcommand{\UniCrest}{logoucl.png}
-\newcommand{\UniLogo}{logoucl.png}%<<<<<<<<< Make Sure Files are in the Template
-\newcommand{\GroupName}{group 3 - ixn website}
-\newcommand{\StudentNameA}{Alexander Charles}
-\newcommand{\StudentNumberA}{alexander.charles.17@ucl.ac.uk}
-\newcommand{\StudentNameC}{Giovanni Tenderini}
-\newcommand{\StudentNumberC}{giovanni.tenderini.17@ucl.ac.uk}
-\newcommand{\StudentNameB}{Pheobe Staab}
-\newcommand{\StudentNumberB}{phoebe.staab.17@ucl.ac.uk}
-\newcommand{\SupervisorNameA}{Yun Fu}
-\newcommand{\SupervisorEmailA}{yun.fu@ucl.ac.uk}
+\newcommand{\UniCrest}{TempImg/logoucl.png}
+\newcommand{\UniLogo}{TempImg/logoucl.png}
+\newcommand{\THS}{TempImg/logo.png}
+
+\newcommand{\UniLogoHP}{TempImg/engLogo.jpg}%<<<<<<<<< Make Sure Files are in the Template
+\newcommand{\StudentNameA}{Ahmed Afify}
+
+\newcommand{\StudentNameB}{Gideon Acquaah-Harrison}
+
+\newcommand{\StudentNameC}{Daiana Bassi}
+
+\newcommand{\StudentNameD}{Antonio Manganelli}
+
+\newcommand{\StudentNameE}{Cameron Mory}
+
+\newcommand{\StudentNameF}{Stefan Poechhacker}
+
+\newcommand{\StudentNameG}{Caroline Smith}
+
+\newcommand{\StudentNameH}{Phoebe Staab}
+
+\newcommand{\SupervisorNameA}{Rae Harbird}
+\newcommand{\SupervisorEmailA}{r.harbird@ucl.ac.uk}
+
 
 
 % -----------------------------------------------------------------------------------
@@ -198,7 +206,7 @@
 }{}
 \hypersetup{unicode=true,
             pdftitle={\AssignmentTitle},
-            pdfauthor={\StudentNameA},
+            pdfauthor={\AssignmentTitle},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -253,8 +261,8 @@
 \pagestyle{fancy}
 \lhead{\includegraphics[width = 0.15\textwidth]{\UniLogo}}
 % \chead{\AssignmentTitle}
-% \rhead{}
-\lfoot{\StudentNameA, \StudentNameB, \StudentNameC}
+\rhead{}
+\lfoot{\AssignmentTitle}
 \cfoot{}
 \rfoot{Page \thepage} %%%% note the footer is swapped when page numbering style changes
 \renewcommand\headrulewidth{0.4pt}
@@ -297,43 +305,43 @@
 
 
 %----------------------------------------------------------------------------------------
-                                  %	TITLE PAGE FORMAT
+                                  % TITLE PAGE FORMAT
 %----------------------------------------------------------------------------------------
 \pagenumbering{roman}
 \begin{titlepage}
 
-	\center % Center everything on the page
+  \center % Center everything on the page
 %----------------------------------------------------------------------------------------
-%	HEADING SECTION
+% HEADING SECTION
 %----------------------------------------------------------------------------------------
-		\usefont{OT1}{bch}{b}{n}
-		\normalfont \normalsize \textsc{\University} \\ [10pt]
-		\normalfont \normalsize \textsc{\Faculty} \\ [25pt]
+    \usefont{OT1}{bch}{b}{n}
+    \normalfont \normalsize \textsc{\University} \\ [10pt]
+    \normalfont \normalsize \textsc{\Faculty} \\ [25pt]
+    
 %----------------------------------------------------------------------------------------
-%	LOGO SECTION - Adds Univeristy Crest to the Report
+% LOGO SECTION - Adds Univeristy Crest to the Report
 %----------------------------------------------------------------------------------------
-		\includegraphics[width = 0.6\textwidth]{\UniCrest}\\[0.5cm]
+    % \includegraphics[width = 0.5\textwidth]{\UniLogoHP}\\[0.5cm]
+    \includegraphics[width = 0.4\textwidth]{\UniCrest}\\[0.5cm]
+    
 %----------------------------------------------------------------------------------------
-%	HEADING SECTION
+% HEADING SECTION
 %----------------------------------------------------------------------------------------
-		\normalfont \normalsize \textsc{\ModuleTitle} \\ [10pt]
-    \normalfont \normalsize \textsc{\DegreeTitle} \\ [25pt]
+    \normalfont \normalsize \textsc{\ModuleTitle} \\ [10pt]
 %----------------------------------------------------------------------------------------
-%	TITLE SECTION
+% TITLE SECTION
 %----------------------------------------------------------------------------------------
-		\horrule{0.5pt} \\[0.4cm]
-		\huge \textbf{\AssignmentTitle} \\
-		\horrule{2pt} \\[0.5cm]
+    \horrule{0.5pt} \\[0.4cm]
+    \includegraphics[width = 0.7\textwidth]{\THS}\\[0.5cm]
+    % \huge \textbf{\AssignmentTitle} \\
+    \horrule{2pt} \\[0.5cm]
+
 %----------------------------------------------------------------------------------------
-%	HEADING SECTION
-%----------------------------------------------------------------------------------------
-\normalfont \normalsize \textsc{\GroupName} \\ [25pt]
-%----------------------------------------------------------------------------------------
-%	AUTHOR SECTION
+% AUTHOR SECTION
 %----------------------------------------------------------------------------------------
 \begin{minipage}{0.4\textwidth}
   \begin{flushleft} \large
-  \emph{Supervisors:}\\
+  \emph{Supervisor:}\\
   % Change Name
   \textbf{\SupervisorNameA}\\
   % \textbf{\SupervisorNameB}
@@ -349,29 +357,33 @@
 \begin{minipage}{0.4\textwidth}
   \begin{flushleft} \large
   \emph{Authors:} \\
-  	\textbf{\StudentNameA} \\
+    \textbf{\StudentNameA} \\
     \textbf{\StudentNameB} \\
-    \textbf{\StudentNameC}
+    \textbf{\StudentNameC} \\
+    \textbf{\StudentNameD}
   \end{flushleft}
 \end{minipage}\qquad
 \begin{minipage}{0.4\textwidth}
   \begin{flushright} \large
-     \emph{Authors Email:} \\
-     (\StudentNumberA) \\
-    (\StudentNumberB) \\
-    (\StudentNumberC)
-    \end{flushright}
-\end{minipage}\\[0.6cm]
+  \emph{ } \\
+    \textbf{\StudentNameE} \\
+    \textbf{\StudentNameF} \\
+    \textbf{\StudentNameG} \\
+    \textbf{\StudentNameH}
+  \end{flushleft}
+\end{minipage}\qquad
+
 
 %----------------------------------------------------------------------------------------
-%	DATE SECTION
+% DATE SECTION
 %----------------------------------------------------------------------------------------
+
 \textit{{\large \today}}\\% Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
-%	Disclaimer
+% Disclaimer
 %----------------------------------------------------------------------------------------
-{\footnotesize This report is submitted as part requirement for the MSc Computer Science degree at UCL. It is substantially the result of my own work except where explicitly indicated in the text. The report may be freely copied and distributed provided the source is explicitly acknowledged.}
+{\footnotesize This report is submitted as part requirement for the COMPGC22 module at UCL. It is substantially the result of our own work except where explicitly indicated in the text. The report may be freely copied and distributed provided the source is explicitly acknowledged.}
 
 % ---------------------------------
 \vfill % Fill the rest of the page with whitespace
@@ -383,20 +395,19 @@
 
 
 % -----------------------------------------------------------------------------------
-%                             	 ABSTRACT
+%                                ABSTRACT
 % -----------------------------------------------------------------------------------
 
 \addcontentsline{toc}{section}{Abstract}
 \begin{abstract}
-  A fundamental understanding of modern web development techniques is an essential part of any computer science degree programme. In GC02, MSc Computer Science candidates take on a development project with an industry client in the tech, health, or education sector. This body of work describes the design and technical implementation carried out for the Industry Exchange Network (IXN) as a part of the GC02 module coursework during the first term of the 2017-18 academic year. IXN is an educational methodology enabling UCL computer science students to enhance their degree training in a wide variety of real-world problem-solving projects as part of their courses. The IXN provides a variety of opportunities for students to work with a wide variety of clients ranging from small charities to large corporate partners. The IXN team required a new modern designed website, to attract new industry partners and market past student work. This report will discuss the full cycle of development for the creation of a new IXN website, marketing the IXN describing what the organisation is about and promoting past student work.
+  An abstract goes here.
 
-  Creating an efficient and responsive User Interface design was essential to meeting the website's requirements.  As such, front-end and back-end development were done based on the latest industry standards using a Roots.io open source software.  The result was a WordPress website meeting all the necessary client requirements and more.  Responsive design, elegant and modern features and as well as practical functionality were achieved through a collaborative effort over a few short months.
 \end{abstract}
 \newpage
 
 \addcontentsline{toc}{section}{Acknowledgements}
 \section*{Acknowledgements}\label{acknowledgements}
-The team would like to thank Dr Yun Fu, professor of GC02 and client of the project, for the kind attention and time offered to support the group. Moreover, the team would also like to thank Marios Constantinides for the guidance and help provided in the implementation of the IXN project.
+The acknowledgement goes here.
 \newpage
 % -----------------------------------------------------------------------------------
 %                              TABLE OF CONTENTS
@@ -417,1480 +428,1068 @@ The team would like to thank Dr Yun Fu, professor of GC02 and client of the proj
 \addcontentsline{toc}{section}{List of Acronyms}
 \section*{List of Acronyms}\label{acronyms}
 \textbf{CS}: Computer Science \\
-\textbf{CMS}: Content Management System \\
 \textbf{UCL}: Univeristy College London \\
-\textbf{IXN}: Industry Exchange Network \\
-\textbf{HCI}: Human Computer Interation \\
-\textbf{UI}: User Interface \\
-\textbf{UAT}: User Acceptance Testing \\
-\textbf{WP}: WordPress \\
-\textbf{MVP}: Minimum Viable Product \\
-\textbf{IDE}: Integrated Development Environment \\
-\textbf{IT}: Information Technology \\
-\textbf{MoSCoW}: Must have, Should have, Could have, Won't have \\
-\textbf{GCO2}: Module Code \\
+
 
 
 \newpage
 
 %% -----------------------------------------------------------------------------------
-%%                          	  INTRODUCTION
+%%                              INTRODUCTION
 %% -----------------------------------------------------------------------------------
 \clearpage
-\rfoot{Page \thepage\ of \pageref{LastPage}}
+\rfoot{Page \thepage}
 \pagenumbering{arabic}
 % \begin{counted} %<<<<<<<<<<<<<<STARTS WORD COUNTER
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
-
-This report describes the creation of the new Industry Exchange Network
-(IXN) website showcasing UCL Computer Science students' projects and
-marketing the organisation to attract new industry partners.
-
-\hypertarget{the-client}{%
-\subsection{The Client}\label{the-client}}
-
-The IXN project was appointed by Dr Yun Fu, a Teaching Fellow, App
-Project Manager and Student Internship Manager at University College
-London (UCL). An essential part of Dr Fu's profession is to connect
-students to the industry; where, having an online environment to
-showcase the work done by UCL CS students and market the IXN is key to
-attracting new industry partners. Consequently, the IXN website was
-commissioned as an educational methodology enabling students to engage
-in real-world problem based learning through term-based client projects.
-
-\hypertarget{the-project}{%
-\subsection{The Project}\label{the-project}}
-
-The Industry Exchange Network website allows UCL Computer Science
-students to get involved with term-based client projects \cite{g1}. The
-website showcases a variety of student projects, ranging from 1st Year
-Students to the more advanced MSc Data Science endeavours. Typical
-industry partners include entrepreneurs, charities, healthcare
-companies, researchers, SMEs, government organisations and large
-enterprises. The IXN constantly requires new industry projects for its
-students. Therefore, the main objective of the website was to market IXN
-to professionals; showcasing the abilities of UCL Computer Science
-students.
-
-\hypertarget{project-goals}{%
-\subsection{Project Goals}\label{project-goals}}
-
-\begin{itemize}
-\item
-  Attract new partners to get UCL students involved in their ventures
-\item
-  Facilitate interaction between the industry and UCL scholars
-\item
-  Showcase the excellence of Projects made by the Department of Computer
-  Science
-\item
-  Enable communication between industrial partners and UCL professors
-\item
-  Inform students and partners regarding events held by the Industry
-  Exchange Network
-\item
-  Display the News regarding the achievements of IXN
-\item
-  Allow site admins to speedily and effortlessly update the webpage
-\end{itemize}
-
-\hypertarget{website-overview}{%
-\subsection{Website Overview}\label{website-overview}}
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth]{ph13.png}
-      \caption{An example of some of the key sections and pages on the IXN website.}
- \end{figure}
-
-\hypertarget{project-management}{%
-\section{Project Management}\label{project-management}}
-
-\hypertarget{the-team}{%
-\subsection{The Team}\label{the-team}}
-
-\hypertarget{alexander-charles-team-leader}{%
-\subsubsection{Alexander Charles (Team
-Leader)}\label{alexander-charles-team-leader}}
-
-Alexander obtained a Bachelor of Engineering in Engineering Design
-specialising in Aerospace. He has worked with firms including Babcock
-International in Marine and Defence and The Manufacturing Technology
-Centre (MTC) in Aerospace. Lately, he transitioned into Strategy
-Consulting working on advising Telecommunications CEO's on the use of
-blockchain technology while at Redshift Strategy. In his spare time,
-Alexander has practised web development, building WordPress website for
-an array of small clients.
-
-\textbf{Roles:}
-
-\begin{itemize}
-\tightlist
-\item
-  Project Management
-\item
-  Front End-Development and Optimisation
-\item
-  Back-end Development and Deployment
-\item
-  UI Design
-\item
-  Prototyping
-\item
-  Report Writing
-\end{itemize}
-
-\hypertarget{giovanni-tenderini}{%
-\subsubsection{Giovanni Tenderini}\label{giovanni-tenderini}}
-
-Giovanni obtained a Bachelor of Science in Economics and Finance at the
-University of Exeter. His work experience includes a Summer Internship
-in the Investment Banking division of a Family Office in Milan named CFO
-and another internship at Generali Italia insurance sales division. His
-overall knowledge of programming is basic. However, he is an expert in
-statistical analysis and related programs.
-
-\textbf{Roles:}
-
-\begin{itemize}
-\tightlist
-\item
-  Testing
-\item
-  Sketching and Design
-\item
-  Prototyping
-\item
-  Final and Weekly Report Writing
-\item
-  Video Making
-\item
-  Minimal Front-End Implementation
-\end{itemize}
-
-\hypertarget{phoebe-staab}{%
-\subsubsection{Phoebe Staab}\label{phoebe-staab}}
-
-A graduate of the BSc Chemistry Programme at University College Dublin,
-Phoebe had little to no real programming experience before attending
-UCL. She had done a couple of online courses in Java and Python and did
-some novice-level statistics programming in R during her undergraduate
-degree. Outside of technology-related work, Phoebe has completed several
-lab-based research internships at University of Queensland and
-University College Dublin.
-
-\textbf{Roles:}
-
-\begin{itemize}
-\tightlist
-\item
-  Prototyping
-\item
-  Front End-Development
-\item
-  Report Writing
-\item
-  Content Creator
-\item
-  Research
-\item
-  Minimal Back-end Development
-\end{itemize}
-
-\hypertarget{team-coordination}{%
-\subsection{Team Coordination}\label{team-coordination}}
-
-For the project to be successful, good co-ordination was fundamental for
-the team to collaborate effectively. Productivity tools and workflow
-management has been key to the team working efficiently. The key
-technologies used by the IXN team included:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Slack:} allowing team members to communicate. Chosen due to
-  its ability to share files, track conversations via thread and create
-  alerts
-\item
-  \textbf{Trello:} used as a dashboard to distinguish between work to be
-  done, in progress or completed
-\item
-  \textbf{OneDrive:} used as a cloud sharing tool
-\item
-  \textbf{GitHub:} used to share code between developers, provide
-  version control, manage conflicts and deploy the site to the live
-  server. A private repository provided by UCL was used to keep any work
-  out of the public domain
-\end{itemize}
-
-\hypertarget{scheduling}{%
-\subsection{Scheduling}\label{scheduling}}
-
-Work packages were allocated according to each team members' strengths
-and weaknesses. Jobs were distributed to optimise team members' time
-while allowing all individuals to learn. A Gantt chart was used to map
-out the timeline of the project to keep tasks on track and manage
-deadlines. Figure \ref{gantt}, shows a slimmed down version of the Gantt
-chart used.
-
-\begin{landscape}
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.3\textwidth]{Picture1.png}
-      \caption{Gantt chart describing project progress throughout the semester, where "w" stands for weeks dedicated to the development of each task}
-\label{gantt}
- \end{table}
- \end{landscape}
-
-\newpage
-
-\hypertarget{design-methodology}{%
-\section{Design Methodology}\label{design-methodology}}
-
-A design methodology was followed incorporating both agile and waterfall
-design processes to reach the project's objectives on time and to a high
-quality. The design process was split into three phases:
-\emph{definition, design} and \emph{development}. Figure
-\ref{designprocess}, shows an overview of the projects workflows and a
-breakdown of the key steps of each phase.
-
-\begin{figure}[H]
-\centering
-\includegraphics[trim = 0 0 0 0, clip, width=0.98\textwidth]{DesignProcess.eps}
-\caption{Diagram illustrating the design process progressing the from the initial briefing right through all stages of implementation.}
-\label{designprocess}
-\end{figure}
-
-\hypertarget{definition-phase}{%
-\subsection{Definition Phase}\label{definition-phase}}
-
-This phase focused on collecting requirements and defining the
-objectives of the project. Through attending several meetings with the
-client, the project's requirements were captured. These meetings
-obtained the main features of the site, establishing and organising the
-content that would be displayed. User research was then embarked,
-refining the objectives and content of the site. These stages all worked
-towards providing all the prior analysis required to begin designing,
-prototyping and envisioning how the website would function.
-
-\hypertarget{design-phase}{%
-\subsection{Design Phase}\label{design-phase}}
-
-The design phase applied human-computer interaction (HCI) principles in
-an agile to approach, to mock up a variety of different solutions and
-refine these solutions quickly. A process of sketching different
-components of the website, whittling these sketches down to wireframes
-then further downselecting to prototypes was followed. The designers,
-client and user groups tested the solutions, providing feedback and
-learning that was fed back into the design, improving the overall design
-of the website. This process was iterated multiple times until a rough
-solution was generated, which met both the requirements and the met HCI
-objectives. This process was called the user interface (UI) design
-cycle.
-
-Spending time upfront to make all design decision for the website,
-before writing any code was key to making sure the solution was
-user-friendly and visual while saving a lot of time. The rough solution
-created by UI design cycle stage was padded out; refined into a static
-representation of the final look a feel of the site. This template could
-then be directly copied in the development phase. A large amount of time
-could be saved in the development phase of the project by having a
-finalised design template to work of which included; typography, UI
-components, page layouts and mobile views of the site.
-
-\hypertarget{development-phase}{%
-\subsection{Development Phase}\label{development-phase}}
-
-Development was the final phase of the project. A complete understanding
-of how the final product will look and function, based on the research
-conducted in the definition phase and the detailed design template in
-the design phase meant that all the technology required to required to
-implement the solution can be selected. A local development environment
-shared amongst all the developers enabled the use of an agile build
-cycle, using git to mediate between the different versions. The build
-cycle consisted of a developer taking a UI component from the template
-and creating the design in code. This would then be connected to the PHP
-database using WordPress and the tested. Any bugs in either the design
-or functionality could then be ironed out through iteration through the
-cycle eventually integrating all the components together into the final
-site. Once the entire design template was implemented, the project could
-then be deployed on the web.
-
-\hypertarget{site-map}{%
-\subsection{Site Map}\label{site-map}}
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.85\textwidth]{ph16.png}
-      \caption{Site Map indicating the features available within each section.}
-      \label{sitemap}
- \end{figure}
-
-\hypertarget{page-flow}{%
-\subsection{Page Flow}\label{page-flow}}
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.84\textwidth]{PageFlow.png}
-      \caption{Page Flow showing how the sections/pages of the site are interconnected. }
-      \label{pageflow}
- \end{figure}
-
-\newpage
-
-\hypertarget{requirements-definition}{%
-\section{Requirements Definition}\label{requirements-definition}}
-
-\hypertarget{client-requirements}{%
-\subsection{Client Requirements}\label{client-requirements}}
-
-The primary requirements of the IXN website were highlighted in the
-first meeting with Dr Yun Fu; highlighting the IXN website aim was to
-encourage new industry partners to join the programme. Therefore, the
-new website had to be a high-quality example of the department
-capabilities while employing the following requirements:
-
-\begin{itemize}
-\tightlist
-\item
-  High quality and professional design
-\item
-  Fully responsive website
-\item
-  Content Management System to allow the Administrator to update the
-  website without touching code
-\item
-  Separate pages for Events, News, Contact and Featured Projects.
-\item
-  A navigation bar always present at the top of the website
-\end{itemize}
-
-\hypertarget{types-of-requirements}{%
-\subsection{Types of Requirements}\label{types-of-requirements}}
-
-There are two types of requirements in web development: functional and
-non-functional. The former define specific tasks and activities that the
-project must be able to perform. The latter outlines the way that a
-system operates and is strongly related to the architecture of the
-system \cite{g5}. Due to the nature of a website used to showcase
-projects, most of the requirements fall under the functional category.
-Nonetheless, all of the most important requirements are listed below:
-
-\hypertarget{functional-requirements}{%
-\subsubsection{Functional Requirements}\label{functional-requirements}}
-
-\begin{itemize}
-\tightlist
-\item
-  Professional and highly polished design
-\item
-  Displaying news and events related to the Industry Exchange Network
-\item
-  Showcasing projects made by the CS department through images and
-  videos
-\item
-  A navigation bar which is always present at the top of the webpage
-\item
-  Displaying partners of the IXN
-\item
-  Project Sorting tool
-\end{itemize}
-
-\hypertarget{non-functional-requirements}{%
-\subsubsection{Non-functional
-Requirements}\label{non-functional-requirements}}
-
-\begin{itemize}
-\tightlist
-\item
-  Content Management System allows an admin to update the website
-  without having to modify the code directly.
-\item
-  Scalability when inserting new projects, news and events
-\end{itemize}
-
-\hypertarget{moscow}{%
-\subsection{MoSCoW}\label{moscow}}
-
-To distinguish between Must-Have requirements, Should and Could-Haves
-the team used a MoSCoW analysis framework \cite{g4}. The tool was
-constructed by combining statistics extracted from surveys, Client
-Requirements, Personas and Use Cases. A well developed MoSCoW
-facilitated the implementation and design of the project by streamlining
-the creation and implementation processes. The MoSCoW for the IXN
-project is displayed below:
-
-\newpage
-
-\begin{landscape}
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.35\textwidth]{moscowv2.pdf}
-      \caption{MoSCoW framework applied to IXN website laying out the site requirements.}
- \end{table}
- \end{landscape}
-
-\newpage
-
-\hypertarget{user-definition}{%
-\section{User Definition}\label{user-definition}}
-
-\hypertarget{round-one-user-feedback}{%
-\subsection{Round One User Feedback}\label{round-one-user-feedback}}
-
-Evaluation is concerned with gathering data regarding the usability of a
-design or a product by a specified group of users within a specified
-environment or work context. The first round of user surveys was taken
-based on sketches to assess essential site content. The results were
-used to inform a MoSCoW, storyboards, and subsequent sketches. The
-results of the survey are outlined below:
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{ph3.png}
-      \caption{IXN network round one User Feedback result summary}
-\label{userfeedback}
- \end{figure}
-
-As can be seen, the features which were given highest importance were
-project-related features and IXN information-related features shown in
-Figure \ref{userfeedback}. In addition to these content-related
-attributes, it also became evident that the design-quality would be of
-utmost importance, given that the site is meant to attract prospective
-industry partners.
-
-\hypertarget{related-research}{%
-\subsection{Related Research}\label{related-research}}
-
-Related research was highly important due to the red tape imposed by
-regulations at UCL. External sources were used to understand the type of
-audience that the website would appeal to and what level of digital
-ability the users would typically have. The image below outlines the
-outcomes of such research:
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{p21.png}
-      \caption{Summarisation of the the information obtained during user research.}
- \end{figure}
-
-Data providing a fuller picture of the demographics of IXN Students were
-found primarily using UCL student statistics \cite{ps1}. This
-information was provided on the UCL website. It was determined that the
-IXN student audience is typically British and male. This evidence helped
-us develop a data-driven persona. The client indicated that this is not
-a target-user, but never the less; user research determined that UCL IXN
-students would be an audience regardless of the website's intent since
-they would like to see their work, the work of other students, and
-possible industry partners.
-
-The client's target audience for the IXN site was potential and current
-partners. Based on the assigned projects for GC02 during the current
-term, the partners tend to be from technology companies and charity
-institutions.
-
-The research was done on the demographics of a typical charity
-volunteer/ employee in the UK using sources such as The Charity
-Commission \cite{ps2} and National Council for Voluntary Organisations
-\cite{ps3}. Based on worked published from these organisations, it was
-determined that the typical charity employee is aged 45 or older and
-usually holds a degree. A persona and use-case were developed based on
-this information. This data also indicated that the site should be
-streamlined and simple without confusion on how to navigate through
-different pages.
-
-To obtain a profile for a technology employee, sources such as the
-Atlantic \cite{ps4} and The Harvard Business Review \cite{ps5} were
-utilised. The research indicated that employees at such businesses are
-typically males in their early to mid-thirties. This data was, again,
-used to inform a persona/use-case scenario. It was determined that this
-type of user is typically technology-proficient and that the site should
-reflect the high calibre of technical capability of IXN students.
-
-\hypertarget{limitations}{%
-\subsection{Limitations}\label{limitations}}
-
-The main limitations were imposed by the HCI department which did not
-allow surveys to be taken from those other than immediate family members
-or UCL CS students. Fortunately, in the case of the Industrial Exchange
-Network, UCL Computer Science students account for a high percentage of
-users. Had more time and leniency been given for user research, a
-broader audience could have been surveyed resulting in a more in-depth
-study of user requirements. Having a budget to dedicate to research
-could have also helped to obtain more statistically significant results.
-For example, questionnaires could have been sponsored to attract a
-larger public to complete them.
-
-\hypertarget{personas-for-users}{%
-\subsection{Personas for Users}\label{personas-for-users}}
-
-Based on client specification and demographics research, five personas
-were created to gain an understanding of the end user of the product.
-The two main user categories that were focused on were: ​
-
-\emph{Technology industry employees:}​
-
-\begin{itemize}
-\tightlist
-\item
-  Digital Native Users who have got strong tech background​
-\item
-  Look for a business opportunity​
-\item
-  High expectations from design and quality of website​
-\item
-  The platform has to appear professional for them to be incentivised to
-  join IXN​.
-\end{itemize}
-
-Consistency and affordance were the main design principles considered
-for this persona. These were essential for a professional looking
-website ​with intuitive an interaction with the platform. ​
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{ph1.png}
-      \caption{SME Tech Enterprise Employee Persona}
-\end{figure}
-
-\emph{UCL Computer Science Students: ​}
-
-\begin{itemize}
-\tightlist
-\item
-  Highly trained digital users​
-\item
-  They require the projects they have worked on to be very visible​
-\item
-  Expect to be well represented by the design of the website​
-\item
-  They desire the platform to be as entertaining as possible. ​
-\end{itemize}
-
-Visibility was the main design principle considered for this persona,
-concerning how the projects were showcased. ​
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{persona1.png}
-      \caption{UCL Computer Science Student Persona}
-\end{figure}
-
-\hypertarget{use-cases}{%
-\subsection{Use Cases}\label{use-cases}}
-
-Use cases were constructed to represent the standard user navigation and
-interaction with the platform needed to accomplish a given task
-\cite{g3}. These were useful in shaping the development and design of
-the website and facilitating the interaction between the website and its
-users. In the case of the IXN website, the role of the administrator was
-also taken into account.
+\hypertarget{project-overview}{%
+\section{Project Overview}\label{project-overview}}
+
+\hypertarget{team-members}{%
+\subsection{Team Members}\label{team-members}}
 
 \begin{table}[H]
       \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{ph9.png}
-      \caption{Use case graph indicating the different ways in which an admin or user may use the IXN website.}
-\end{table}
-
-An outline of the use cases can be found below. This is a list of the
-actions related to the Must and Should sections of the MoSCoW. To avoid
-repetition, the main routes (in bold) have been outlined in detail.
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{ph10.png}
-      \caption{List outlining some prospective use cases. The cases in bold are discussed further below.}
- \end{table}
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{UCA2.png}
-      \caption{Detailed UCA2 use case describing how an admin would post a new project on the IXN site using WordPress.}
- \end{table}
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{ph12.png}
-      \caption{Detailed UCU3 use case describing how a user could sort through displayed projects to see only mobile app projects.}
- \end{table}
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{ph11.png}
-      \caption{Detailed UCU4 use case describing how a user would contact Yun Fu, an IXN coordinator. }
- \end{table}
-
-\newpage
-
-\hypertarget{user-interface-design}{%
-\section{User Interface Design}\label{user-interface-design}}
-
-\hypertarget{ui-design-cycle}{%
-\subsection{UI Design Cycle}\label{ui-design-cycle}}
-
-After the initial debrief with the client, describing what the IXN does
-and the primary website requirements, the HCI design process began.
-Initial research into competing solutions revealed that there was no
-exact equivalent to IXN. However, there were specific features of
-similar sites that would later inspire IXN content, such as ``How to
-use'' and ``Events'' sections and prominent placement of industry links.
-
-Based on initial research including competing solutions, initial user
-surveys and client meetings, a shortlist of potential user types was
-obtained and was used to inform several personas and use-case scenarios.
-Throughout the entire research process, iterations of hand-drawn
-sketches were made in an attempt to hone in on an ideal data-driven
-design. Additionally, storyboards were made to outline specific user
-experiences.
-
-\begin{figure}[H]
-\centering
-\includegraphics[trim = 0 0 0 0, clip, width=0.98\textwidth]{UIDesign.png}
-\caption{UI design process starting from iterative hand-drawn sketches and leading through to the final design that was implemented on the IXN site.}
-\label{UIDesign}
-\end{figure}
-
-After the second round of user feedback, a MoSCoW requirements table was
-defined to inform several generations of wireframes. Down-selection of
-such wireframes gave way to an initial prototype which was then
-scrutinised via Heuristic and Think-Aloud user evaluation. The final
-prototype that inspired the IXN website design was developed over
-several iterations based on all of the data obtained during the HCI
-portion of the course.
-
-Various tools were used to turn handmade sketches into a final
-prototype. The table below explains which methods have been used and the
-reason they have been chosen:
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.95\textwidth]{prototypeout.pdf}
-      \caption{An outline of the prototyping methods and tools used}
- \end{table}
-
-\hypertarget{detailed-design}{%
-\subsection{Detailed Design}\label{detailed-design}}
-
-Sketch was used to make the final prototype, which was then employed
-directly in front-end development. Each member of the team took
-responsibility for designing both the web and mobile views for
-particular components of the IXN site. In Sketch, both Symbols and UI
-Components sheets were made; housing key design elements of the site to
-avoid redundancy and maintain consistency throughout the site. Sketch's
-ability to produce exportable CSS code based on prototype design
-elements made the tool particularly useful during the implementation
-stage of development. An example would be the IXN website's section
-headings. A symbol was created to maintain a consistent design of this
-feature for all of the sections on the homepage and throughout the
-external pages.
-
-After components were individually designed, the team came together to
-ensure a cohesive flow was maintained throughout the site. Small tweaks
-were made to individual components to ensure a consistent user
-experience across every part of the IXN website. After this
-collaborative effort concluded, front-end development commenced.
-
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[trim = 0 0 0 0, clip, width=1.3\textheight]{SketchDD.png}
-\caption{An overview of the final detailed design Sketch template that was used in for the front-end development of the site.}
-\label{sketchdd}
-\end{figure}
-\end{landscape}
-
-\newpage
-
-\hypertarget{technical-research}{%
-\section{Technical Research}\label{technical-research}}
-
-\hypertarget{content-management-system}{%
-\subsection{Content Management System}\label{content-management-system}}
-
-A content management system (CMS) is a piece of software which provides
-a level of automation for the tasks required to manage content
-efficiently. It is usually server-based, interacting with content stored
-in a repository; which can be located on the same server \cite{p1}. In
-web development, the ultimate purpose of such tools is to allow an
-administrative user to edit the content on a website without having to
-append code files directly.
-
-The CMS used for the IXN project was WordPress. There are other free,
-open-source CMS options, such as Drupal or Joomla, but WordPress was
-selected due to a few critical advantages.These can be boiled down to:
-
-\begin{enumerate}
-
-\tightlist
-\item
-  Better support options and availability
-\item
-  Superior access to themes and add-ons
-\item
-  Easy website maintenance.
-\end{enumerate}
-
-\hypertarget{support-options-and-availability}{%
-\subsubsection{Support Options and
-Availability~}\label{support-options-and-availability}}
-
-WordPress support is available on a plethora of developer channels for
-web developers and beginners alike on a myriad of platforms. These
-include docs, handbooks, codex, Slack channels and Stack Exchange to
-name a few. Being the most popular CMS, there are entire websites
-dedicated to supporting in addition to thousands of online tutorials.
-Unlike WordPress, finding expert support for Joomla or Drupal is more
-difficult. All of the platforms provide extensive primary source
-documentation, but~because of WordPress's popularity, it outshines its
-competitors as far as ease of access to efficient troubleshooting.~
-
-\hypertarget{access-to-themes-and-add-ons}{%
-\subsubsection{Access to Themes and
-Add-ons~}\label{access-to-themes-and-add-ons}}
-
-While Drupal and Joomla also both offer themes and add-ons, the access
-and variety are not comparable to WordPress, which offers around 40,000
-additional plugins. In Joomla, there is a feature that allows users to
-install extensions. However, to access a template, a user would still
-have to manually search templates and then install them by adding their
-URL, more arduous than WordPress streamlined process using the
-dashboard. Worse still, Drupal users have to exit their site, search for
-a specific module or theme, find a zip file URL and submit the URL to
-the Modules or Themes page to install them.~
-
-Not only does WordPress take minutes to install, but also the dashboard
-interface after the install is simple and easy to navigate \cite{p3}.
-This is especially useful if you are developing a simple site for a
-client and they want to be able to manage and modify the site's content
-easily. Updating Wordpress is a seamless process often requiring no
-developer interaction. It should also be mentioned that to increase
-accessibility, WordPress offers a mobile app that users can download to
-monitor and update their site. Joomla's post-install panel less
-intuitive, partly due to offering many more features out of the box
-\cite{p2}. Seasoned web developers may~prefer this, but for simplicity,
-WordPress wins out. Drupal offers users \emph{distributions}, particular
-to the type of site that they want to develop. This could be a bit
-confusing for beginners. Finally, Drupal's updates can require developer
-knowledge \cite{p4}.
-
-\hypertarget{roots-technology-stack-sage-bedrock-and-trellis}{%
-\subsection{Roots Technology Stack: Sage, Bedrock and
-Trellis}\label{roots-technology-stack-sage-bedrock-and-trellis}}
-
-Traditionally, WordPress app development and deployment involve
-installing Apache, My SQL and PHP locally, often installed using
-software such and MAMP or WAMP. Servers (particularly shared hosting
-providers) often provide WordPress installs using a one-click install
-method. This prevents the developer having to configure installation and
-setup of the production server remotely but limits files to be uploaded
-via File Transfer Protocol (FTP) only. This method has many limitations
-and is highly unsuitable for professional website development. Some of
-the limitations include:
-
-\begin{enumerate}
-
-\tightlist
-\item
-  No relationship between local and production files creating
-  duplication of work
-\item
-  Databases between local and production will be different and hard to
-  sync across
-\item
-  If an error occurs when updating production files, the entire
-  production site can be corrupted suspending the websites service to
-  users
-\item
-  FTP sites can be very slow to load and update
-\item
-  Plugins and backend changes have to be completed through the control
-  panel, and no WP-CLI access is provided \cite{p13}
-\end{enumerate}
-
-The Root's open source technologies instead provide a different more and
-superior approach to Wordpress app development; through creating
-development and production environments, ensuring that production
-environments server match the development virtual machine precisely.
-
-To illustrate; after creating a new theme or plugin for a Wordpress site
-on a local server, it is time to deploy. The Sage starter theme offer
-out of the box code optimisation technology which requires compiling.
-Through typing a single line of code, a developer can install or update
-all the correct version of the plugin on the production site, compile
-assets, update the theme on the remote server, and then ensure the
-plugin has been activated on the production site while maintaining the
-database between the local and development sites. Through using Sage,
-Bedrock and Trellis in unison, the process of developing, testing and
-deploying can be reduced to a fraction of the time while the site can be
-fully optimised and remain online and stable. The following subsections
-give more detail to the three Roots technologies:
-
-\hypertarget{bedrock}{%
-\subsubsection{Bedrock}\label{bedrock}}
-
-Bedrock is a modern WordPress stack that brings more automation to web
-development and site maintenance and does so using a better folder
-structure, see Figure \ref{bedrockfolder}. It uses PHP \emph{.dotenv}
-for environment variables, which are part of the twelve-factor app
-\cite{p6}, a methodology created by Heroku for building web
-apps\cite{p5}. The main goal of this methodology is to improve work on a
-growing codebase
-\footnote{The details of underlying principles of this methodology are beyond the scope of this work but can be found in \cite{p8}.}.
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.85\textwidth]{ph20.png}
-      \caption{Difference between Bedrock and standard Wordpress File Structure}
-\label{bedrockfolder}
- \end{figure}
-
-Composer, a tool for dependency management in PHP, is used to pull in
-both *.dotenv and WordPress, along with WordPress plugins \cite{p7}.
-Suppose a developer has a project that depends on some libraries and
-some of those libraries depend on other libraries. In essence, Composer
-allows the developer to declare the libraries they depend on and finds
-out the correct versions of packages needed and installs them into the
-project \cite{p8}.
-
-\hypertarget{trellis}{%
-\subsubsection{Trellis}\label{trellis}}
-
-Trellis is a Wordpress development and production server tool which
-creates and manages these machines. Trellis makes use of Ansible, using
-this software for automation of cloud provisioning, configuration
-management, application deployment, and many other IT needs \cite{p12}.
-These are automated across both local and production servers. To create
-a local environment, a machine must be provisioned on top of a
-virtualiser, such as VMWare or VirtualBox. Vagrant is then used to
-implement these development environments. It is a virtual environment
-manager with a focus on automation \cite{p10}. Vagrant provides work
-environments that are easy to configure, reproducible, and transportable
-controlled by a single reliable workflow. Then, industry-standard
-provisioning tools such as shell scripts, Chef, or Puppet, can
-automatically install and configure software on the virtual machine
-\cite{p10}.
-
-The combination of the Bedrock structure and Ansible automation means
-that Trellis allows WordPress developers to create and manage more
-professional server environments almost automatically.
-
-\hypertarget{sage}{%
-\subsubsection{Sage}\label{sage}}
-
-Sage (sitting on top of the Trellis, Bedrock stack), provides modern
-front-end development workflow designed with the idea of creating:
-
-\begin{itemize}
-\tightlist
-\item
-  An advanced workflow
-\item
-  Minimal HTML5 templates
-\item
-  Theme wrappers
-\item
-  Handy tools such as browser sync to automatically compile and check
-  code across a range of device synchronously
-\end{itemize}
-
-\hypertarget{front-end}{%
-\subsection{Front-End}\label{front-end}}
-
-As the name would suggest, front-end development encompasses the
-creation of the parts of a website with which the user interacts,
-through the use of technologies such as HTML, CSS, and JavaScript. In
-other words, this is where the site's content, styling and dynamic
-interface is coded.
-
-HyperText Markup Language (HTML), is the backbone of every website. This
-is where a site's content is kept. It is in the HTML documents where a
-developer uses embedded PHP to connect the site to the content
-management system.
-
-Cascading style sheets (CSS) are where a websites look is created. SCSS
-is a version of CSS written for SASS, a program written in Ruby that
-assembles CSS style sheets for a browser. The advantage of using SASS is
-that is has added functionality, allowing the use of variables, nested
-rules, mixins and more within CSS-compatible syntax \cite{p14}.
-
-Having a responsive design is critical for modern websites since they
-are accessed from a variety of browsers and screen sizes. To achieve a
-consistent, responsive interface, Bootstrap 4, a front-end web framework
-based on CSS styling, can be used. It has set of fixed classes that
-allow developers to quickly create applications that scale to a variety
-of device sizes. Additionally, Bootstrap aids developers in adding
-conventional components such as navigation bars and panels to a site. It
-has become the industry standard for responsive web development
-\cite{p15}.
-
-To add dynamic functionality to a website JavaScript (JS) is used. JS is
-a front-end development language employed by many websites and supported
-by all modern web browsers. JQuery is a JavaScript library that
-simplifies animation, event handling and much more. It is also used to
-add functionality to a website \cite{p16}.
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{ph18.png}
-      \caption{Front-End to Back-End Interaction}
- \end{figure}
-
-\hypertarget{back-end}{%
-\subsection{Back-End}\label{back-end}}
-
-Backend development refers to the server-side code written to ensure
-that a site is robust and usable. This is the code that is run on the
-server and is responsible for things such as database interactions,
-logic, and calculations. PHP is a server-side scripting language used to
-query a database such as MariaDB or MySQL \cite{p17}. MariaDB is a fork
-of MySQL and as such has the same database structure and indexes.
-
-If WordPress is used as the content management system, it is also
-deployed on the server so that content can be updated via the
-user-friendly dashboard. This then updates the database and
-strategically placed PHP embedded in HTML can be used to display the
-content in the appropriate part of the site.
-
-Blade by Laravel is a templating engine used in conjunction with PHP,
-after appending the file extension \emph{blade.php}. Blade employs the
-concepts of template inheritance and sections. The \emph{@section}
-notation allows for easy organisation of a site and can be embedded
-inside HTML code. The \emph{@extends} notation can be used to inherit
-other layouts. These tools are extremely convenient for effectively
-organising code \cite{p18} meeting some of the design patterns further
-discussed in Section \ref{design-patterns}.
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.98\textwidth]{ph17.png}
-      \caption{Back-End interaction to Front End interaction}
- \end{figure}
-
-\newpage
-
-\hypertarget{system-architecture}{%
-\section{System Architecture}\label{system-architecture}}
-
-In order to be able to create a high performance website, using the
-latest technologies to optimises run-time and speed up the design
-process; a stack of Wordpress technologies were used in three-tier
-system architecture. The stack was run across both local and production
-servers enabling a testing environment which was fully representative of
-the production server while all code could be kept offline.
-
-The full open source Roots stack \cite{rootsweb} was selected as it
-provided all the tools and structure required to develop the project to
-a professional standard. Figure \ref{systemarchitecture} shows the
-relationship between the three roots technologies; Sage, Bedrock and
-Trellis, and their relationship to the system architecture.
-
-\begin{figure}[H]
-\centering
-\includegraphics[trim = 0 0 0 0, clip, width=0.77\textwidth]{SystemArchitecture.eps}
-\caption{Diagram showing the websites systems architecture, highlighting the relationship between different technologies}
-\label{systemarchitecture}
-\end{figure}
-
-\hypertarget{design-patterns}{%
-\subsection{Design Patterns}\label{design-patterns}}
-
-Due to the complexity of the IXN website's system architecture, multiple
-design patterns were used; simplifying development workflow and
-improving code readability. The Roots Sage starter theme was selected
-because it offers many design pattern benefits off the shelf. Some of
-the typical benefits of using design patterns include:
-
-\begin{itemize}
-\tightlist
-\item
-  The ability to reuse large amounts of code \cite{deanDesignPatterns}
-\item
-  Capture expert knowledge from other developers where design trade-offs
-  have already been evaluated
-\item
-  Improve communication between the IXN development team
-\end{itemize}
-
-\textbf{Strategy:} This is where a family of algorithms are defined and
-are made interchangeable depending on the client use case
-\cite{gamma1995design}. This design pattern was used in the handling of
-JavaScript files, splitting the files into common, main and custom.
-Different JavaScript files would be loaded dependent on which page was
-being called.
-
-\textbf{Singleton:} This is where a class is ensured not to have any
-more than one instance \cite{gamma1995design}. When creating PHP
-functionality for the website such as Reading Time
-(\texttt{reading\_time()}), found on news posts or the string chopper
-tool (\texttt{chop\_string()}) these classes where defied once in the
-\texttt{extras.php} file and then called using namespaces. This ensured
-the classes were only created once and the functionality could be
-accessed elsewhere in the code (see Figure \ref{ddcode}).
-
-\textbf{Template Method:} This is where a skeleton is used to define
-reusable components for subclasses \cite{gamma1995design}. This means
-that subclasses can redefine certain steps of the over-arching class
-without changing the code's structure. Through using the Larval
-templating engine, a skeleton for each view could be defined in the
-\texttt{app.blade.php}, different templates files could then be selected
-and swapped out depending on the page selected.
-
-\begin{figure}[H]
-\centering
-\includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{ddcode.png}
-\caption{Overview of project code structure, including singleton design pattern in extras.php}
-\label{ddcode}
-\end{figure}
-
-\newpage
-
-\hypertarget{implementation}{%
-\section{Implementation}\label{implementation}}
-
-After researching and down-selecting the most appropriate technologies
-to meet the project requirement goals, a development environment was
-created and shared amongst all the members of the team. The local
-development environment was then used to codify the detailed design
-template (formed at the end of the design phase) into the final product.
-This section discusses the methodology and workflow of the build cycle
-and deployment stages within the development phase of the project.
-
-\hypertarget{local-development}{%
-\subsection{Local Development}\label{local-development}}
-
-Due to the advantages discussed in Section
-\ref{roots-technology-stack-sage-bedrock-and-trellis}, Trellis was used
-to set up a local Ubuntu server on a virtual machine. The virtual
-machine provided a sandbox to test and develop the IXN website
-replicating the characteristics of a live production server. After
-installing Trellis's dependencies on a developers computer, and
-configuring specific files; Trellis can be run to create a local
-development environment automatically; building a local server on a
-virtual machine, and provisioning a full LEMP stack and Wordpress
-installation \cite{p21}.
-
-\hypertarget{file-configuration}{%
-\subsubsection{File Configuration}\label{file-configuration}}
-
-Configuring of the Trellis requires few simple steps. Within the Trellis
-file directory a collection of files were edited including:
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{group\_vars/development/wordpress\_sites.yml}
-\item
-  \texttt{group\_vars/development/vault.yml}
-\end{itemize}
-
-These files configure the server name and allow for multisite
-installation to be created. Using Ansible's inbuilt encryption software,
-all \texttt{.vault} files were encrypted, preventing any passwords to be
-read when committing the code to github.com. File setup only required
-completing once, shared across GitHub to all team members.
-
-\hypertarget{server-provisioning}{%
-\subsubsection{Server Provisioning}\label{server-provisioning}}
-
-Finally, typing \texttt{vagrant\ up} and \texttt{vagrant\ provision} in
-the command line while in the Trellis directory ran the Trellis
-software. Vagrant and Ansible did most of the heavy lifting, configuring
-two Trellis dependency packages, which used a Vagrantfile and a
-collection of Ansible \texttt{*.yml} files to set up a virtual machine
-\cite{p22}. By using the Trellis setup, a similar workflow was used to
-provision and deploy to a production server.
-
-\hypertarget{development-tools}{%
-\subsection{Development Tools}\label{development-tools}}
-
-On completing the design phase discussed in Section
-\ref{user-interface-design}, the design template was split up into
-components that were individually codified by each team member and then
-brought together into the final Wordpress theme. Through combining
-Bedrock with the Sage starter theme with a collection of development
-tools, an efficient workspace and workflow were used.
-
-\hypertarget{text-editors-intergrated-development-environmets-ides}{%
-\subsubsection{Text Editors / Intergrated Development Environmets
-(IDEs)}\label{text-editors-intergrated-development-environmets-ides}}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{CodePen:} Used to make each component for the website before all
-  of the sections were integrated into the appropriate page layouts. The
-  benefit of using CodePen is that HTML, CSS and JavaScript code can be
-  written in the browser, and compiled in real time, with the result
-  visible in the same window. \cite{p19} Ultimately, it allowed for
-  faster development and easy troubleshooting, focusing on design
-  problems alone.
-\item
-  \emph{Atom/ Sublime}: These are lightweight text editors that utilise
-  plugins to give additional functionality. These tools were used for
-  tweaking the site and writing HTML code
-\item
-  \emph{PHP Storm:}, An advanced IDE, used predominantly for writing PHP
-  and optimising SCSS code.
-\end{itemize}
-
-\hypertarget{collaboration}{%
-\subsubsection{Collaboration}\label{collaboration}}
-
-GitHub was used as the version control system for creating the IXN
-website. Git allows revisions the code to be stored neatly and
-chronologically. The changes can then be seen by other developers who
-can download and modify it using tools such as Github Desktop.
-\cite{p20} GitHub is the community of developers and where they store
-their work. For the IXN website, there was a group repository where the
-code was shared and updated. To organise project code and ensure the
-integrity of the site, five branches were made; two master branches and
-a branch for each developer (Alexcode, PhoebeCode and GioCode). When
-updates were finalised, code from the developer branches was merged into
-the Dev branch. This code was reviewed, and if there were no clashes,
-the code could then be pushed to the master branch. The master branch
-housed the cleanest and most current version of the site at any given
-time. The master branch was used as the code base for deployment
-ensuring only stable code would be deployed. Figure \ref{githubcollab}
-highlights the branch structured used in code collaboration.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[trim = 0 0 0 0, clip, width=0.98\textwidth]{ph15.png}
-    \caption{Overview of Github Collaboration Workflow}
-  \label{githubcollab}
-\end{figure}
-
-\hypertarget{web-technologies}{%
-\subsubsection{Web Technologies}\label{web-technologies}}
-
-The following technologies were used to create the front end interface
-of the IXN website. After using the Trellis development environment, the
-team could fully focus on creating a Wordpress theme. A theme acts like
-a skin which sits on top of the Wordpress CMS, providing the interface
-that users interact with. Using the Sage starter template, the following
-list of web technologies could be used out of the box.
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{HTML:} used for creating webpage content structure
-\item
-  \emph{Bootstrap 4:} enhancing HTML code through providing easy to use
-  classes making the website responsive. Bootstrap 4 offers many
-  advantages over Bootstrap 3 including an enhanced grid system and SCSS
-  as standard \cite{Differen19:online}
-\item
-  \emph{SCSS:} a pre-processor styling language providing additional
-  functionality to basic CSS and allowing the styling sheet to be
-  compiled, optimised and minified into a single CSS file named
-  \texttt{main.css} by webpack. SCSS was organised into three main
-  folders holding the components, layouts and global styles. This
-  framework greatly improved the readability of the code and SCSS
-  \emph{variables}and \emph{mixins} could then be used throughout the
-  files to enable quick revision throughout the entire code base
-\item
-  \emph{JavaScript + (JQuery):} used to make pages interactive, adding
-  client-side programming functionality to the site. Javascript was used
-  to make the nav-bars interactive, add video and map support among
-  other features
-\item
-  \emph{PHP 7.1:} used as the server side language to interact with the
-  server pulling out the correct content to display such as news and
-  event post content
-\item
-  \emph{Larvavel (Blade): } This is the templating engine used to avoid
-  code repetition in keeping with the design patterns discussed in
-  Section \ref{design-patterns}
-\item
-  \emph{AJAX:} used to allow the website to send and retrieve data from
-  a PHP server asynchronously without refreshing the page. This
-  technology was key to create an effective project post sorter
-\item
-  \emph{Shell Scripting: } small shell scripts were written to automate
-  database and upload syncing between different server environments
-\end{itemize}
-
-\hypertarget{build-cycle}{%
-\subsection{Build Cycle}\label{build-cycle}}
-
-To implement the IXN website efficiently, the build cycle highlighted in
-Figure \ref{designprocess} was followed to allow for an agile
-development process. Each team member was assigned components to design,
-construct and test; to streamline the process of making, testing and
-tweaking for different screen sizes and browsers until the element was
-ready to integrate into the final code base. The build process can be
-summarised in the following steps:
-
-\begin{enumerate}
-
-\tightlist
-\item
-  Using the Sketch detailed design template, CSS components could be
-  exported giving the rough parameters for font shape and size
-\item
-  CSS code was placed into CodePen where HTML and JS were used to
-  construct the component in full-screen size. This tool was chosen due
-  to its' ability to display new changes in the HTML and CSS instantly
-  without the need of any local development setup.
-\item
-  Bootstrap 4 code would then be added to, and the code base would be
-  tweaked to make the component fully responsive working in every screen
-  size
-\item
-  Code created on Codepen was then transferred to a text editor and
-  integrated into the development site. This was statically tested in
-  the local environment, fixing any integration problems that may have
-  occurred
-\item
-  Once the local environment displayed positive static results, PHP was
-  embedded in the HTML code to enable and simplify the connection to
-  WordPress and the Maria DB database.
-\item
-  Another element was chosen, and the iterative process was followed all
-  over again.
-\item
-  On completion of all components, the integrated site was tested across
-  a range of browsers, and any issues were resolved.
-\end{enumerate}
-
-Through following the build cycle, a minimum viable product (MVP) could
-be quickly created allowing progress to be shown to the client and
-enhancements to be made with ease. Figure \ref{buildcycleimg} shows an
-overview of the different steps of the build cycle.
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.98\textwidth]{ph21.png}
-      \caption{An example of the iterative process used to develop all site components, in this case, the footer.}
-\label{buildcycleimg}
- \end{figure}
-
-\hypertarget{deployment}{%
-\subsection{Deployment}\label{deployment}}
-
-On completion of the build cycle, the code base was ready to be deployed
-to the live production server. Due to the client's relationship with
-Microsoft, Azure was selected as the production server to use, providing
-more than enough performance to run the IXN website.
-
-\hypertarget{azure-setup}{%
-\subsubsection{Azure Setup}\label{azure-setup}}
-
-Using the Azure dashboard, a new blank Ubuntu 16.0.4 server was deployed
-on a paid service plan which met the websites performance requirements.
-The lead developers SSH key added enabling easy access to connect to the
-remote server. The domain name \texttt{ixn.host} was purchased via
-Namecheap selected due to its low cost. This was directed to the
-production server using A name records. Finally, to allow inbound
-connections to the server, port 80 required being changed to open.
-
-\hypertarget{remote-server-connection}{%
-\subsubsection{Remote Server
-Connection}\label{remote-server-connection}}
-
-To deploy to the remote server via the local development environment, a
-couple of extra steps were needed since the production server required
-Trellis to connect, Provision and Deploy. Provisioning was done to
-ensure MariaDB, Wordpress and Nginx were installed. Nginx was
-configured, and a database was set up for the IXN site. The server was
-provisioned using server.yml. The deployment was done using deploy.yml
-which compiled the codebase from the master branch on GitHub created
-config files and reloaded Nginx. \cite{p23}.
-
-Code can be deployed after writing the following lines on the command
-line in the Trellis directory:
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{ansible-playbook\ server.yml\ -e\ env=production}
-\item
-  \texttt{./bin/deploy.sh\ production\ ixn.host}
-\end{itemize}
-
-\newpage
-
-\hypertarget{testing}{%
-\section{Testing}\label{testing}}
-
-\hypertarget{compatibility-responsiveness}{%
-\subsection{Compatibility \&
-Responsiveness}\label{compatibility-responsiveness}}
-
-The team researched which browser simulator would be most suitable for
-testing the compatibility and responsiveness of the IXN website.
-BrowserStack was an attractive option because of the range of emulators
-that the tool offers \cite{g6}. BrowserStack offered the possibility of
-testing the IXN website on a multitude of Operating Systems, Devices and
-Browsers. The team tested the IXN project on physical devices as well.
-The results obtained for desktops and laptops are displayed below:
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.98\textwidth]{ph7.1.png}
-      \caption{Laptop/Desktop browser testing results, where green indicates a pass and red indicates a fail.}
- \end{table}
-
-In regards to testing on mobile devices, BrowserStack was the chosen
-platform. However, physical device testing also played a very important
-role. The webpage appears fully responsive on the most current browsers,
-however, as occurred with the desktop devices older versions of software
-(around 2012/2013) struggle with the design, SCSS and Bootstrap 4. The
-mobile testing results are displayed below:
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.65\textwidth]{ph8.png}
-      \caption{Mobile browser testing results}
- \end{table}
-
-\hypertarget{server-stability-issues}{%
-\subsection{Server Stability Issues}\label{server-stability-issues}}
-
-The team encountered issues in launching the website through Microsoft
-Azure due to the complexity involved in the process of setting up a
-stable server. Initially, following deployment, browsers sporadically
-showed that the page was not redirecting properly or that the page was
-in a redirect loop. The problem seemed to disappear after the website
-had been reloaded a second time. However, the team was able to come up
-with a solution to this problem resulting in reliable server stability.
-Since this solution was implemented during the final days of the
-project, future teams working on the IXN website will have to run more
-robust tests to determine the extent to which the issue is still
-present.
-
-\hypertarget{acceptance-testing}{%
-\subsection{Acceptance Testing}\label{acceptance-testing}}
-
-The IXN User Acceptance Testing (UAT) was carried out based on the IXN
-website requirements\cite{g7} . Use Cases were used to pick and prepare
-tasks for users to perform during testing. The procedure that the IXN
-team followed for User Acceptance Testing is the following:
-
-\begin{enumerate}
-
-\tightlist
-\item
-  Design tests for users to cover functional scenarios of the website
-\item
-  Select a testing team of individuals from a variety of backgrounds
-\item
-  Perform the tests and record the results
-\item
-  Fix the bugs encountered or improve the inadequate features.
-\end{enumerate}
-
-For the IXN website UAT, thirty-five individuals of varied technical
-backgrounds were asked to complete the tasks given and the time of
-completion was recorded. The table below summarises the results
-obtained:
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{ph4.png}
-      \caption{Summarised results from User Acceptance Testing, indicating a good user response to the IXN website's UI. }
- \end{table}
-
-\hypertarget{error-guessing}{%
-\subsection{Error Guessing}\label{error-guessing}}
-
-Error guessing has been put into practice by making the most of the
-expertise of fellow UCL Computer Science Students. The IXN team asked
-members of the Department of Computer Science to come up with, consider
-and assess circumstances in which the software behind the website might
-have had problems in coping with the requests made. The efficiency of
-this testing technique depends on the tester's abilities. In the case of
-the IXN website, some minor bugs were spotted in the news section.
-Consequently, the team went on to fix them.
-
-\newpage
-
-\hypertarget{conclusions}{%
-\section{Conclusions}\label{conclusions}}
-
-\hypertarget{requirements-accomplishments}{%
-\subsection{Requirements
-Accomplishments}\label{requirements-accomplishments}}
-
-When comparing the MoSCoW requirements to the team achievements, it is
-evident that all of the ``Must-have'' (in green) and ``Should-have'' (in
-yellow) requirements were fulfilled. An extra ``Could-have'' (in red)
-feature was also included to give a more comprehensive user experience.
-Table \ref{conreq} shows an annotated MoSCoW, explaining how the
-requirements were implemented.
-
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{ph5.png}
-      \caption{Post implementation annotated MoSCoW showing the progress made throughout the term.}
+      \includegraphics[trim = 0 0 0 0, clip, width=0.6\textwidth]{TempImg/teamtable.png}
+      \caption{Team members and email addresses}
 \label{conreq}
  \end{table}
 
-\hypertarget{team-achievements}{%
-\subsection{Team achievements}\label{team-achievements}}
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
 
-Teamwork presented several advantages and disadvantages. The IXN team
-faced a few challenges concerning background knowledge, workload
-division and the different culture of its team members. There were times
-of disagreement between team members, however, through open-minded
-discussion, honesty, cooperation and respect every individual gained
-valuable experience and new skills throughout the development of the
-website.
+This report will elaborate on the process used by Group A to design the
+DIY Tool Hire Service. The assignment was completed following the
+use-case driven Unified Software Development Process (USDP){[}1{]}.
 
-While additional technical features and subtle design improvements may
-have been possible with additional time, the final overall look and
-functionality of the site were satisfactory given the module
-constraints. Overall, the team was happy with the final result of the
-IXN website.
+The iterative nature of the USDP resulted in multiple evolutions at
+every step in the process. While each aspect of development -- from the
+requirements gathering and use cases to the object-oriented diagrams --
+underwent several iterations, only the final iterations have been
+included within the report. All of the diagrams found in this report
+were completed in Unified Modeling Language (UML) format, the industry
+standard.
 
-\hypertarget{critical-evaluation-future-development}{%
-\subsection{Critical Evaluation \& Future
-Development}\label{critical-evaluation-future-development}}
+This chapter of the report will contain the problem statement, a
+description of the scope of the project, a glossary of terms used
+throughout the report, and a Gantt chart to display the project timeline
+followed by the team. Following these sections is a summary of the
+project management style. The subsequent chapters will cover the topics
+of requirements gathering, use case development, object-oriented
+analysis, and application mockups. Every stage of the development
+process prior to the delivery of a minimum viable product (MVP) was
+completed.
 
-The project was highly design-focused. Therefore, the team worked
-tirelessly to make the site attractive, simple-to-use and polished.
-However, site maintenance is crucial for the continued efficacy of the
-site.\cite{g8} The role of future developers working on the IXN website
-will, therefore, be to build upon the foundations that have already been
-created. Some points of focus could be:
+\hypertarget{problem-statement}{%
+\subsection{Problem Statement}\label{problem-statement}}
 
-\begin{itemize}
-\tightlist
-\item
-  Improving/expanding site content: Continuously updating the latest
-  projects, news, and events
-\item
-  Improving/expanding upon the WordPress Admin Panel: Optimizing the
-  panel to exact admin specifications
-\item
-  Simplifying the post-adding method: Make adding new project, news and
-  events posts more intuitive
-\item
-  Improve site speeds and performance: Optimize Azure server
-  configuration and site file optimisation (minifying CSS, JS etc.) to
-  avoid current occasional redirect errors. Use Google site speed checks
-  to find weaknesses in current performance
-\item
-  Improved search optimisation: Use of plugins (e.g., YOAST)
-\item
-  Improved data analytics: Connect to client's Google analytics account
-\item
-  Further improvements based on more thorough user-testing: Evaluate
-  user response to current site through exhaustive user-based testing to
-  make a more data-driven site design and functionality
-\end{itemize}
+These days, DIY home projects are very popular. Walk-throughs can be
+found all over the internet for tasks such as making a bed-side table,
+painting rooms with interesting patterns, or even building a shed.
 
-Moreover, the additional and less requested requirements of the
-``Could'' section of the MoSCoW can be taken consideration and
-implemented. A commented version of the ``Could'' portion, explaining
-how the features can be realised, is present below:
+One of the main problems when it comes to these tasks is that the
+average person may not have the tools required readily available. It may
+also be exceptionally expensive for people to go buy those tools as
+well. Spending the money to purchase the tool is unlikely when it is
+only needed for one specific project. DIY hobbyists require a service
+that enables them to rent the tools they require for a much lower fee
+than if they had to buy it themselves.
+
+People who wish to complete home projects may also be limited by their
+lack of experience with the tools. These people need to be provided with
+advice and video tutorials that will show them how to properly use the
+tools they wish to rent.
+
+\hypertarget{project-scope}{%
+\subsection{Project Scope}\label{project-scope}}
+
+This report outlines the design process for a web application for
+individuals who enjoy DIY projects but lack the tools to accomplish
+them. The goal of the service is to provide a platform for people to
+rent tools for short-term periods to complete their tasks. It will also
+offer advice and tutorials for those who may require some help getting
+started.
+
+The central purpose of the web application is to allow individuals in
+the London area to hire out tools for their projects. The customer will
+be able to search through a selection of available tools, with the
+ability to sort by type, name, or project. Having found the desired
+tool, the customer will then check the calendar for its availability and
+then add it to the basket. Upon check-out completion, the database will
+be updated to reflect the dates for which the tool is booked to prevent
+another customer from selecting those dates as well.
+
+Customers may also view the blog containing weekly advice and subscribe
+to it if they wish. They may also submit queries to the customer support
+if they have any specific questions.
+
+On the other side of the operation, employees may complete a range of
+tasks including managing the tool listings, uploading new blog posts,
+and responding to customer queries.
+
+The success of the project would be measured by the delivery of the
+completed stages of the software development process prior to the
+creation of a prototype. This would include requirements gathering,
+use-case analysis, object-oriented analysis and design models, and a
+system mockup.
+
+\hypertarget{project-glossary}{%
+\subsection{Project Glossary}\label{project-glossary}}
+
+In order to be clear and consistent throughout the project, specific
+words and phrases were used. These can be found in the glossary below.
 
 \begin{table}[H]
       \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{ph6.png}
-      \caption{Features that were not obtained in this body of work but could be implemented in the future.}
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/glossary.png}
+      \caption{Project glossary containing key terms}
+\label{conreq}
  \end{table}
+
+\hypertarget{gantt-chart}{%
+\subsection{Gantt Chart}\label{gantt-chart}}
+
+The Gantt charted shown below displays the project timeline followed by
+the team.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.4\textwidth]{TempImg/gant.png}
+      \caption{Gantt Chart Showing the Project Timeline}
+ \end{figure}
+
+\hypertarget{project-management-scrum-embedded-unified-process}{%
+\subsection{Project Management: SCRUM Embedded Unified
+Process}\label{project-management-scrum-embedded-unified-process}}
+
+The Unified Process or UP was developed in the 1990s and is a pragmatic
+and tested method for carrying out the development of a software system
+and was designed specifically for use with UML. Essentially, it is a
+process by which the who, what, and when of a development can be
+determined. {[}2{]} The three main principles of the UP are:
+
+\begin{itemize}
+  \item The development process should be driven by use-cases and risk assessment
+  \item Components related to the Warehouse management. It manages which tools are available and in which quantity.
+  \item The development process should emphasize a quality system architectural model 
+  \item Software should be developed via step-wise completion of subprojects and continuous refinement through iteration
+\end{itemize}
+
+Within each iteration, five workflows are explicitly defined by the UP.
+These are requirements, analysis, design, implementation and testing.
+(UP book) The broader project lifecycle is also covered in the UP and is
+made up of four distinct phases which are inception, elaboration,
+construction and transition. Within each of these phases, multiple
+iterations should take place to suit the projects needs. Figure 1.2
+illustrates how all of the elements of the UP are tied together into a
+single project lifecycle.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.6\textwidth]{TempImg/UP.png}
+      \caption{Outline of the Unified Process project lifecycle [2]}
+ \end{figure}
+
+SCRUM is a subset of Agile and is project management framework that grew
+out of the failures of previous models such as the Waterfall model.
+There are three empirical pillars that uphold any SCRUM project. {[}3{]}
+These are:
+
+\textbf{Transparency:} common standards are agreed upon within a team in
+order to avoid ambiguity.
+
+\textbf{Inspection:} Users must inspect and update SCRUM artifacts
+throughout the development process.
+
+\textbf{Adaptation:} Progress must be monitored by members of the SCRUM
+team and if the process has deviated to an unacceptable extent, the
+product(s) that resulted from that process must be reviewed and adapted.
+
+These pillars underpin the SCRUM project lifecycle approach which
+involves:
+
+\begin{enumerate}
+  \item The Scrum team meets in order to prioritize the artifacts in product backlog. This could be a list of required features for a product.
+  \item Before a Sprint begins, the team has a Sprint planning meeting to decide what work will be done during the sprint.
+  \item  The team does a backlog refinement to confirm that the project is still on track before beginning the Sprint to ensure that work will not be wasted.
+  \item  During the 2-4 week Sprint, the team has daily meetings which are short, lasting only 15 minutes or less. 
+  \item At the end of each sprint, the team members present their work and have a Sprint Retrospective to analyze what could be improved during the next sprint. [4]
+\end{enumerate}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/SCRUM.png}
+      \caption{The SCRUM project lifecycle [4]}
+ \end{figure}
+
+For the DIY THS project, the team utilized both of these methodologies
+where they were suitable. The broader project lifecycle was shaped by
+the tenants of the Unified process, while more day-to-day project
+management was derived from some useful features of SCRUM.
+
+The UP identifies that emphasizing system architecture and developing
+based on use-cases leads to successful products. This was integral to
+the development of the THS system. Given that the implementation was not
+carried out for the THS, the team had the opportunity to rigorously
+refine and identify essential use cases. From these use-cases, object
+oriented (OO) UML models were derived. After the essential system
+objectives were laid out through OO models, the architecture was
+modeled. Additionally, the THS team made use of the four phases of the
+Unified Process to help structure project progress which is illustrated
+in the Gantt chart in Section 1.6.
+
+While the team did not assign official SCRUM roles, certain useful
+aspects of SCRUM were adopted. Early in the project, the team developed
+a backlog of the tasks that needed to be accomplished throughout the
+semester. Then, to fulfill these goals, the team worked in 1 week
+Sprints followed by Retrospectives to assess the challenges encountered
+in the previous week and plan the next Sprint. Additionally,
+transparency and standardized communication was essential for such a
+large group project and as such, a team glossary was used throughout.
+
+Both the UP and SCRUM outline the importance of iteration, which was the
+absolute core of the THS project. During the weekly Retrospectives,
+analysis of the previous weeks work was done by the team members and the
+project supervisor, which shed light on improvements to be made on the
+current work products. In many cases, several Sprints were used to
+refine a single work product.
+
+Overall, the project management was more of an adaptation of key tenants
+of both UP and SCRUM rather than an absolute adoption of all of their
+aspects. Ultimately, being able to utilize aspects of such models to
+suit the team's needs resulted in very smooth project coordination and
+consistent progress throughout the semester.
+
+\newpage
+
+\hypertarget{requirements-gathering}{%
+\section{Requirements Gathering}\label{requirements-gathering}}
+
+\hypertarget{overview}{%
+\subsection{Overview}\label{overview}}
+
+The first task for this project was to develop a list of requirements
+for the DIY Tool Hire Service. To do so, the team began by organizing a
+meeting to discuss the scope of the project. Once everyone came to a
+mutual understanding, the process of coming up with the requirements
+began. During the meeting, the team reviewed the needs of the customer
+when using this type of service. Each member then continued to develop
+requirements individually by researching existing web sites to find
+important functionalities as well as areas which may be improved.
+
+This initial period of requirements development involved a lot of
+brainstorming. The aim was to create a list of requirements that fully
+encompassed the website's functionalities. This would save time and
+effort further down the line, as making up for mistakes made during the
+requirement gathering period can become extremely costly {[}5{]}.
+
+The importance of the requirements gathering stage in the overall scope
+of the project cannot be overstated. The requirements play a pivotal
+role in the progression of the project, directly influencing the
+development of use cases. The use cases then go on to influence the
+classes and methods used, which in turn influence many of the future
+diagrams. With that in mind, it was very important that the requirements
+gathering was done correctly. This is reflected in the significant
+portion of time that was allotted to develop the requirements, as seen
+in the Gantt chart in Section 1.6.
+
+\hypertarget{requirements}{%
+\subsection{Requirements}\label{requirements}}
+
+Although initially long and containing duplicates, the list of
+requirements was refined to fall in line with the scope of the project.
+These requirements were then broken down into subsections such as ``Tool
+Hiring Process'' and ``Help \& Advice'' to aid in navigating the list
+and ensuring the user's needs were accounted for. In Table 2.1, all of
+the functional and non-functional requirements have been assigned IDs
+and descriptions, as well as indications about the type of activity and
+the actors involved. Additionally, every requirement was given a level
+of priority utilizing the MoSCoW system {[}6{]}.
+
+\begin{table}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{TempImg/req1.png}
+ \end{table}
+
+\begin{table}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{TempImg/req2.png}
+      \caption{MoSCoW prioritization of requirements for the THS system}
+ \end{table}
+
+\hypertarget{domain-model-diagram}{%
+\subsection{Domain Model Diagram}\label{domain-model-diagram}}
+
+The domain model is used to represent the real-world actors and
+entities, as well as the relationships between them in the context of
+the problem space. It is a static model, in that it does not show any
+time or information flow. To develop the diagram, the actors and
+entities were derived from the requirements list, with nouns becoming
+entities and verbs becoming relationships. They were then used to help
+reduce ambiguities that may arise during the design period as well as
+managing the complexity {[}7{]}. Additionally, the actors and entities
+represented some possible classes for the later stages of the
+development.
+
+The domain model diagram was finalized over a sequence of iterations,
+with the latest version seen in Figure 2.1 below. The actors, entities,
+and relationships between them are shown using UML notation. Once the
+entities were known, it was easier to construct the use cases more
+effectively.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{TempImg/domain.png}
+      \caption{Domain model diagram}
+ \end{figure}
+
+\newpage
+
+\hypertarget{use-cases}{%
+\section{Use Cases}\label{use-cases}}
+
+\hypertarget{overview-1}{%
+\subsection{Overview}\label{overview-1}}
+
+Having finished with the requirements gathering stage, the next task in
+the process involved developing and analysing a list of use cases. Each
+use case represents some interaction taking place between an actor and
+the DIY Tool Hire Service {[}8{]}.
+
+The use case analysis stage is essential to the development of a proper
+software system. It is vital that each of the requirements listed in
+Table 2.1 is accounted for when creating the use cases. This was
+accomplished using an iterative process, during which the requirements
+were expanded and modified, and the use cases were adapted to support
+those changes.
+
+During the use case analysis period, the team completed the use case
+list, use case diagram, use case specifications, and the use
+case/requirements matrix. These tables and figures are found in the
+following subsections of this chapter.
+
+\hypertarget{use-case-listing}{%
+\subsection{Use Case Listing}\label{use-case-listing}}
+
+When brainstorming the potential list of use cases, it was necessary for
+the team to determine who the actors would be when interacting with the
+DIY Tool Hire Service. The list of actors that was decided on based on
+the requirements came to: Customer, Admin, Credit Card Company,
+Notification Service, Customer Support, Database, and Delivery Service.
+With the requirements and these actors in mind, a list of use cases was
+established. Over the course of several iterations, the list was adapted
+until the final list below was developed.
+
+\begin{table}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.5\textwidth]{TempImg/UCListing.png}
+      \caption{Use case listing}
+ \end{table}
+
+\hypertarget{use-case-diagram}{%
+\subsection{Use Case Diagram}\label{use-case-diagram}}
+
+The use case listing from above was translated into a use case diagram.
+The diagram presents the use cases in a more clearly illustrated manner.
+The team utilized the \textless{}\textgreater{} relationship as a way to
+add optional behaviours to certain use cases, as well as the
+\textless{}\textgreater{} relationship to simplify larger use cases into
+more manageable parts {[}9{]}.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{TempImg/UCDiagram.png}
+      \caption{Use case diagram}
+ \end{figure}
+
+\hypertarget{use-case-specifications}{%
+\subsection{Use Case Specifications}\label{use-case-specifications}}
+
+Continuing the development process, the team took the use cases depicted
+above and provided a much more detailed information for each including a
+description, the actors involved, pre- and post-conditions, as well as
+the main and alternative flows. As the use case specifications were
+written, further alterations took place with the list of use cases. The
+list of use cases was refined, and the specifications continuously
+updated throughout the project as more thought went into the behaviours
+of the actors. The following specifications for the finalized list of
+use cases played a key role in the upcoming design period of the project
+{[}8{]}.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC1.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC2.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC3.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC4.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC5.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC6.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC7.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC8.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC9.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC10.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC11.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC12.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC13.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC14.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC15.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC16.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC17.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC18.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC19.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC20.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC21.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC22.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC23.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC24.png}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/UC25.png}
+ \end{figure}
+
+\newpage
+
+\hypertarget{use-caserequirements-matrix}{%
+\subsection{Use Case/Requirements
+Matrix}\label{use-caserequirements-matrix}}
+
+The last task to accomplish during the use case analysis stage was to
+create a use case/requirements matrix. This matrix, which displays the
+requirements on the left side and the use cases across the top, is
+intended to confirm that each of the requirements is being satisfied by
+one of the use cases and that each use case serves the purpose of
+meeting a requirement {[}4{]}. As seen below, the requirements and use
+cases established by the team satisfy these conditions.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.55\textwidth]{TempImg/UCRMatrix.png}
+      \caption{Use case/Requirements matrix to describe how use cases fulfill system requirements}
+ \end{figure}
+
+\hypertarget{object-oriented-analysis-and-design}{%
+\section{Object-Oriented Analysis and
+Design}\label{object-oriented-analysis-and-design}}
+
+\hypertarget{activity-diagrams}{%
+\subsection{Activity diagrams}\label{activity-diagrams}}
+
+Activity diagrams help to model system processes through a series of
+activities. They have convenient notation, similar to flow charts and
+can be thought of as Object Oriented flowcharts. {[}9{]} Unlike in class
+diagrams or sequence diagrams, actions are written in plain English as
+these diagrams serve as predecessors to more complex, class-oriented
+models.
+
+The THS team used activity diagrams to model complete processes
+including both software and real-world activities, and in doing so
+indicated the relationship between such activities and how they are
+carried out to fulfill system requirements. Included in these
+representations are start and stop states, indicating the beginning and
+end of an activity and forks and joins, to illustrate when activity
+states occur concurrently. {[}9{]} Alternative flows are modeled by
+decisions, represented by a diamond, and indicate different directions
+that can be taked based on a certain condition. The final iterations of
+activity diagrams for the THS are shown below as well as a key to
+activity diagram syntax.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.6\textwidth]{TempImg/ADKey.png}
+      \caption{Key for activity diagram symbols}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.65\textwidth]{TempImg/makeOrderAD.png}
+      \caption{Activity diagram for UC7:Creates Order}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.6\textwidth]{TempImg/newUserAD.png}
+      \caption{Activity diagram for UC1: Creates Account}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{TempImg/checkoutAD.png}
+      \caption{Activity diagram for UC8: Checks Out}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.45\textwidth]{TempImg/manageToolsAD.png}
+      \caption{Activity diagram for UC6: Manages Tool Listings}
+ \end{figure}
+
+\hypertarget{uml-class-diagrams}{%
+\subsection{UML Class Diagrams}\label{uml-class-diagrams}}
+
+\hypertarget{overview-2}{%
+\subsubsection{Overview}\label{overview-2}}
+
+With the functional requirements of the THS established and use cases
+developed to model the user interaction with the system, it was
+necessary to begin to move from the problem domain to the solution
+domain and move more towards the language of the developer, structured
+by classes and packages rather than use cases. {[}1{]}
+
+In doing so, the domain model and use cases were analysed to identify
+the key objects to be modelled in the system. With the objects
+identified, the data attributes of the objects and method call sequences
+required to realise the use cases were established through an iterative
+process of role play and pseudo-code development. This resulted in an
+analysis class diagram - showing the key objects and their
+relationships, a design class diagram -- a more comprehensive and
+defined representation of the system's classes, sequence and activity
+diagrams, state machine diagrams and a deployment diagram, which will be
+discussed in the following sections.
+
+\hypertarget{analysis-dlass-diagram}{%
+\subsubsection{Analysis Dlass Diagram}\label{analysis-dlass-diagram}}
+
+A use-case driven approach was used to identify the key nouns and verbs
+and iteratively develop these into the system's objects and method
+calls. The analysis class diagram in Figure 4.6 shows a middle stage
+iteration. The classes are labelled as either boundary, controller or
+entity classes in line with the Jacobson categorisation style {[}10{]}.
+In this style, the boundary classes encapsulate output data and
+generates output in the required form, the controller classes deal with
+controlling behaviour and completing tasks and the entities classes
+store the data and define operations on the data. The advantage of this
+is that it enforces clear partitioning of responsibilities in the class
+structure early on in the object-oriented design process.
+
+The class names were kept close to the functionality of the class which
+will allow for clarity in the development phase. The relationships
+(associations, generalisations, dependencies, aggregations and
+compositions) were mapped between the classes only where a relationship
+was necessary to achieve a use case.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/OOClass.png}
+      \caption{A model of Boundary-Control-Entity architecture [11]}
+ \end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{TempImg/AClass.png}
+      \caption{Analysis Class Diagram}
+ \end{figure}
+
+\hypertarget{design-class-diagram}{%
+\subsubsection{Design Class Diagram}\label{design-class-diagram}}
+
+The analysis diagram was used as a basis to build the design class
+diagram, which specifies in more detail how the system will be
+implemented, getting closer to the solution domain. There was a strong
+focus on adhering to object-oriented principles. Some of the
+considerations that went into the design class diagram are discussed
+here:
+
+\hypertarget{adding-implementation-details}{%
+\paragraph{Adding implementation
+details}\label{adding-implementation-details}}
+
+Variable types, method parameters and return types were added, along
+with variable and method visibility. Adhering the object-oriented
+principle of \textbf{encapsulation} most class member variables were
+given private visibility with public methods that allow access to them.
+(NB for the sake of coherence of the diagram, not all getters and setter
+were modelled for every class).
+
+\textbf{Static methods} were also used where there was no need for the
+method to use instance variables and the method therefore belongs to the
+class rather than an instance of the class. For example - the methods in
+the database connector are static, as is the `connectionStatus'
+variable. This makes the class a \textbf{singleton class} {[}12{]}
+whereby only one instance of the class need exist in the Java Virtual
+Machine and providing a global point of access to other classes that
+need it.
+
+\textbf{Inheritance} was used only where needed -- to generalise a
+customer and employee to a user -- thereby eliminating duplication of
+user details in each class. It was also used in the `PaymentMethod'
+(parent) and `Deposit' (child) relationship.
+
+\textbf{Interfaces} were used to help separate the specification of an
+entity from implementation of a task. For example - the employee
+controller manages a tool listing via a `manageToolListing' interface.
+This has the advantage that in the future, should the GUI for the tool
+listing change, it is easier to change the implementation of the `manage
+tool listing' methods.
+
+\hypertarget{completeness-primitiveness}{%
+\paragraph{Completeness \&
+Primitiveness}\label{completeness-primitiveness}}
+
+\textbf{Completeness: } this is the specification that the design
+classes should cover all the data and functionality needed. We ensured
+this by iteratively mapping out use case flows and ensuring that classes
+are related and can therefore access instances of each other when
+required. Classes were also added from the analysis class where needed.
+
+\textbf{Primitiveness:} this is the specification that there should
+never be more than one way of doing things. For example -- in our system
+there is just a single `respondToQuery()' method that encompasses
+different types of query rather than several separate methods.
+
+\hypertarget{high-cohesion-low-coupling}{%
+\paragraph{High Cohesion \& Low
+Coupling}\label{high-cohesion-low-coupling}}
+
+\textbf{High cohesion: } this specifies that each class should model a
+single abstract concept {[}9{]}. We ensured this by separating out the
+implementation for managing queries/blog/tool listing/shopping
+basket/user accounts -- so that the employee and customer controllers do
+not take on several different responsibilities. This is also the case
+for the database connector which is a simple class, just concerned with
+connecting to the database, the create/read/update methods are present
+in the respective entities.
+
+\textbf{Low coupling: }This specifies that classes should associate with
+just enough other classes to realise its goal -- e.g.~which was achieved
+by using focused aggregation rather than inheritance in most places.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.89\textwidth]{TempImg/Dclass.png}
+      \caption{Design Class Diagram}
+ \end{figure}
+
+\hypertarget{sequence-diagrams}{%
+\subsection{Sequence Diagrams}\label{sequence-diagrams}}
+
+Sequence diagrams serve as the bridge between use-cases and class
+diagrams. They are a type of interaction diagram which describes the
+order in which interactions in a system occur. The events in sequence
+diagram are shown chronologically, with the earliest event at the top of
+the diagram and the last event at the bottom. Events occur between
+participants, which in the case of the THS, are actors, databases, and
+classes derived from the class diagram. Each event has a message which
+describes the interaction between participants. Methods from the design
+class diagram are used as messages and allow the classes to interact.
+Interactions between the actors and boundaries have messages given in
+pseudo code to describe the real-world interaction between the user and
+the interface. {[}9{]}
+
+For the purposes of this project, messages were given without arguments.
+Given that team determined that the diagrams were useful and adequately
+descriptive using this high level approach, the arguments were
+intentionally left out to reduce clutter. Six sequence diagrams are
+given below to illustrate some of the most relevant use-cases in
+addition to a key describing the features that appear. (Figure 4.9)
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.6\textwidth]{TempImg/SDKey.png}
+      \caption{Sequence diagram symbol key}
+\end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/add_new_tool_SD.png}
+      \caption{Sequence diagram for adding a new tool listing to the THS system. This is a version of UC6: Manages Tool Listing}
+\end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.7\textwidth]{TempImg/new_user_reg_SD.png}
+      \caption{Sequence diagram for registering a new customer to the THS system. This is a version of UC1: Creates Account}
+\end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/create_order_SD.png}
+      \caption{Sequence diagram for creating an order in the THS system. This is a version of UC7: Creates Order}
+\end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{TempImg/check_out_SD.png}
+      \caption{Sequence diagram for checking out. This is a version of UC8: Checks Out}
+\end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/make_blog_post_SD.png}
+      \caption{Sequence diagram for an admin creating a blog post. This is a version of UC23: Posts Advice Blog & Video Tutorials}
+\end{figure}
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/make_query_SD.png}
+      \caption{Sequence diagram for a customer entering a query into the THS system. This is a version of UC19: Raises Query}
+\end{figure}
+
+\hypertarget{state-machine-diagram}{%
+\subsection{State machine diagram}\label{state-machine-diagram}}
+
+In this section three state machine diagrams are displayed and
+explained.
+
+\hypertarget{tool-rental-lifecycle}{%
+\paragraph{Tool Rental Lifecycle}\label{tool-rental-lifecycle}}
+
+This diagram represents the lifecycle of the tool hire from the
+perspective of the tool itself. The tool can switch between four states
+which are: \textit{Available, Booked, Serviced and Maintained}. The
+lifecycle begins at the available state. After the tool is booked by a
+client the tool changes its state to booked. Subsequently, once the tool
+is returned it is checked on functionality and observable flaws.
+Consequently, the tool is either serviced, if it needs repair or it is
+put back in the state of maintained. After this last step, the tool is
+ready for rental again and the state of the tool is changed to
+available. This closed the cycle and the loop continues.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/ToolSM.png}
+      \caption{State machine diagram for a tool rental}
+\end{figure}
+
+\hypertarget{order}{%
+\paragraph{Order}\label{order}}
+
+This diagram visualises the five different states from the shipping
+perspective. The five states are:
+\textit{Pending, Packed, Dispatched, Delivered, Returned and Closed.}
+
+Once the client completed his order, the order changes its state to
+pending, after the shipping is initialized the state of the order is
+changed to packed. Consequently, the ordered tool will be dispatched. If
+the order could not be delivered, it will be returned and dispatched
+again. Once the shipping is completed it will change its state to
+delivered. As soon as the order is cleared the order will change to the
+final state, which is the closed status.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/OrderSM.png}
+      \caption{State machine diagram for an order}
+\end{figure}
+
+\hypertarget{shopping-basket}{%
+\paragraph{Shopping Basket}\label{shopping-basket}}
+
+The following state machine diagrams displays the four stages of the
+shopping basket. The four states are:
+\textit{Empty, Collecting, Checked Out and Ordered.}
+
+The initial state of the shopping basket is empty, once tools are added
+it changes to the collecting state, if the added tool is deleted again
+we find ourselves again in the empty state.In the collecting state,
+arbitrarily many products can be added or deleted. As soon as 1 product
+is in the basket, the collecting state is initialized. Once the client
+confirms that the order the status is updated to checked out. If the
+summary is accepted the shopping basket will convert to the final state
+ordered. However, if the order is abandoned, the whole basket will be
+cleared and it goes back to the initial state, empty.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/BasketSM.png}
+      \caption{State machine diagram for an order}
+\end{figure}
+
+\hypertarget{component-diagram}{%
+\subsection{Component Diagram}\label{component-diagram}}
+
+Figure 4.19 shows the component diagram, which indicates a static
+representation of the projected system with interest to the logical
+elements. This diagram represents part of the architectural features of
+the system. It is more abstract, and it has less details than the
+previous class and object diagrams, therefore, it helps to familiarize
+with the system architecture. The DIY TOOL component diagram has four
+fundamental but interconnected groups.
+
+Groups of the components in the DIY Hire Service system:
+
+\begin{itemize}
+  \item Components related to the User interaction. It allows the users to interact with the system. We have a browser engine, that allow users to find the products; shopping basket, which manage client’s tools basket and the User Session, such as the log-in process.
+  \item Components related to the Warehouse management. It manages which tools are available and in which quantity.
+  \item Components related to the Payment System. It interacts with the APIs of several third-party payment services, such as Visa, MasterCard, PayPal. It allows to complete the transaction
+  \item Components related to the Administration control. It controls the Orders flow and consequentially it depends on the other components. 
+\end{itemize}
+
+Each of the above stated groups includes of components of various types
+such as: executables, libraries, files, ports, connectors and
+interfaces. The figure below shows the components diagram which complies
+with UML 2.0 notation standard.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{TempImg/compD.png}
+      \caption{System components diagram}
+\end{figure}
+
+\hypertarget{three-tier-architecture}{%
+\subsection{Three Tier Architecture}\label{three-tier-architecture}}
+
+A three tier model partitions a system's component's into three layers
+of services. These are more a representation of the logical tiers in a
+system as opposed to a direct physical representation.
+
+The outermost tier that us responsible for user interaction with the
+system is called the presentation tier. {[}13{]} For the Tool Hire
+Service, this means the website's interface with which the user
+interacts. Through the use of Dynamic HTML a THS customer or employee
+can interact with the services in the second tier in a simple and
+intuitive manner. The second tier is known as the Logic or business
+services layer. The processes contained in the second tier carry out the
+actual logic and functionality of the application and have access to the
+third tier. Since many clients can access this tier from different
+devices simultaneously, it is important that this tier manages its
+transactions in order to keep the data structures in the third tier
+consistent and reliable. {[}14{]} An example of how this may be used in
+the THS system would be if multiple customers were trying to book a tool
+at the same time. The logic tier must be able to ``decide'' which
+customer will get to rent the tool, update the database, and send a
+message to each customer indicated the result. Managing such conflicts
+in the second tier greatly reduces the burden on the third tier
+services. {[}13{]}
+
+Finally, the third and innermost tier comprises of a system's data. The
+database management system (DBMS) and the data it manages can only be
+accessed via the second tier. {[}13{]} This is where all data for the
+system is stored. In the case of the THS, some example of data stored
+here would be Order data, Customer data and Tool data. Access to this
+layer can be seen in the design class diagram as the DBConnector class.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.9\textwidth]{TempImg/3TA.png}
+      \caption{Three tiers for the THS system}
+\end{figure}
+
+Even though this architecture is more complex than a single tier, the
+benefits of using a three tier architecture outweigh the drawbacks. The
+three most important reasons a three tier architecture is suitable for
+the THS are:
+
+\begin{itemize}
+  \item If the THS were to expand, the system is easily scalable since the data layer is independent from the other two.
+
+  \item It is easier to maintain and modify the underlying code of the system if it is divided into separate layers, for example the UI can change without modifying the logic layer.
+
+  \item Increased security with security defined for each layer. Since users can only access the second tier and not the third, if proper security measure are taken, a three tier architecture is more secure than a two tier architecture. However, having an additional tier means that during system development, security measure must be carefully discussed between developers working of different tiers in order to ensure that increased surface area doesn’t lead to increased risk. 
+
+\end{itemize}
+
+\hypertarget{deployment-diagram}{%
+\subsection{Deployment Diagram}\label{deployment-diagram}}
+
+The Deployment Diagram shown in Figure 4.21 shows the deployment of
+various software artefacts generated by the Tool Hire Service (THS) to
+deployment targets. Deployment targets are called nodes and can
+represent a device such as a computer or a software execution
+environment. The deployment diagram shows the full hardware architecture
+of the THS. Included is the customer's desktop, a webserver, an
+application server and finally a database. The customer's pc connects to
+the web server where the website is hosted via HTTP (Hypertext Transfer
+Protocol). The web server then connects to the application server via
+RMI (Remote Method Invocation) which handles the business logic for
+components such as orders, shipping and blog posts. Lastly the
+application server connects to the database via JDBC (Java database
+connectivity).
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[trim = 0 0 0 0, clip, width=0.6\textwidth]{TempImg/depD.png}
+      \caption{Deployment diagram}
+\end{figure}
+
+
+
+\newpage
+
+\hypertarget{application-mock-up}{%
+\section{Application Mock-up}\label{application-mock-up}}
+
+\hypertarget{user-manual}{%
+\subsection{User Manual}\label{user-manual}}
+
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content
+
+\begin{enumerate}
+
+\tightlist
+\item
+  About 1
+\item
+  About 2
+\item
+  About 3
+\end{enumerate}
+
+\hypertarget{user-manual-2}{%
+\subsubsection{User Manual 2}\label{user-manual-2}}
+
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content Content Content Content
+Content Content Content Content Content Content
+
+\newpage
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+In this chapter, an overview will be provided of the utilized strategy
+in order to give insights into the approach of the creation of the THS
+system. The team met on a weekly basis and , To increase the
+productivity, the team was divided into sub-groups to carry out varying
+work simultaneously and efficiently. During the weekly group discussion,
+the sub-groups results were reviewed by all the team members with an
+open discussion in order to achieve high quality and consistency between
+all members. The team worked in a reliable manner and internal deadlines
+were met. The weekly progress was monitored by the team's advisor who
+gave feedback and advice for the tasks for the following week..
+
+The development approach was based on strong requirements and use cases.
+The declaration of actors and their functionalities helped to create the
+classes and methods required for the Object-Oriented Analysis stage. As
+the team wanted to ensure that the flow of use cases was represented
+properly, many iterations of object oriented diagrams were made. (See
+Appendix) Although a lot of time was spent on reviewing the diagrams,
+future iterations are possible in the development, which should be in
+line with the tenants of the Unified Process.
+
+The team has developed the project according to the standardised
+documentation of the Unified Modelling Language (UML) and the process
+has been created with an Object Oriented approach to the Analysis and
+Design of a prototype version of the DIY tool renting website.
+
+Great communication and well coordinated teamwork could be observed
+throughout the duration of the course. Both internal and external
+deadlines were met. Although the team met the weekly deadlines and
+worked well, there were aspects that could be considered to be done
+differently for future projects. There have been several difficulties to
+synchronize the writing style between sections completed by different
+people. To minimize this, there were regular reviews on each member's
+contribution in order to ensure consistency.
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begin{enumerate}
+  \item Jacobson, G. Booch, J. Rumbaugh, The Unified Software Development Process, Addison-Wesley, 1999.
+  \item J. Arlow and I. Neustadt, UML and the Unified Process. London: Pearson Education, 2002.
+  \item K. Schwaber and J. Sutherland, "The Scrum Guide", scrumguides.org, 2017. 
+  \item "What's the Difference? Agile vs Scrum vs Waterfall vs Kanban", www.smartsheet.com, 2018. 
+  \item F. Brooks, The Mythical Man Month, Addison-Wesley, 1975.
+  \item A. Kline, Agile Development in the Real World, Apress, 2015.  
+  \item S. Ambler, Agile Model-Driven Development with UML 2.0, Cambridge University Press, 2004.
+  \item A. Cockburn, Writing Effective Use Cases, the Crystal Collection for Software Professionals, Addison-Wesley, 2000.
+  \item R. Miles & K.Hamilton, Learning UML 2.0, O’Reilly, 2006.
+  \item A. Kalmback (2015). ‘Entity-Boundary-Interactor; A modern application architecture’. readthedocs.io [Online]. Available: http://ebi.readthedocs.io/en/latest/
+  \item Whitten, L. Bentley and K. Dittman, Systems analysis and design methods. Boston, Mass.: Irwin/McGraw-Hill, 1998.
+  \item E. Gamma, R. Helm, R. Johnson and J. Vlissides, Design patterns. Boston, Mass.: Addison-Wesley, 2016.
+  \item "Three-tier architectures", ibm.com, 2018.
+  \item “Using a Three-Tier Architecture Model", msdn.microsoft.com, 2018. 
+\end{enumerate}
 % -----------------------------------------------------------------------------------
 %                               BIBLIOGRAPHY - Insert Name of BIB File Here
 % -----------------------------------------------------------------------------------
@@ -1912,121 +1511,139 @@ how the features can be realised, is present below:
 \newpage
 \section{Appendices}
 
-\subsection{Login Guide}
-\subsubsection{Editor Login}
+\subsection{Meeting Minutes}
 
-\begin{enumerate}
+\textbf{Meeting 1: 23rd Jan 2018}
 
-  \item Go to WordPress Login Page at http://ixn.host/wp-admin
-  \item Use the Username: YunFu
-  \item Use the Password: AppDesign
-  \item View and edit Posts (news), Events, Projects and the Homepage (via Pages) content
+Work Flow:
 
-\end{enumerate}
+List of tasks for next 3 weeks compiled:
 
-\subsubsection{Admin Login}
-\begin{enumerate}
+\textbf{Week 1:} Requirements gathering
 
-  \item Go to WordPress Login Page at http://ixn.host/wp-admin
-  \item Use the Username: admin
-  \item Use the Password: ixnTeam2017
-  \item Access granted to all elements of the WordPress dashboard
-
-\end{enumerate}
-
-\subsubsection{Other Passwords}
 \begin{itemize}
-
-  \item \textbf{Vault:} password: ixnTeam2017. Make sure a new \textit{.vault\_pass} file is created when cloning the site repository with the password in the top line
-  \item \textbf{Database:} User: admin , password: ixnTeam2017
+  \item Industry Research
+  \item Everybody to research how to use Latex
+  \item Shared resources to be set up: Github, Latex, One Drive
 
 \end{itemize}
 
-\begin{landscape}
-\subsection{Competing Solutions}
-  \begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.3\textheight]{app5.png}
-      \caption{Possible features to be implemented in the future}
- \end{table}
- \end{landscape}
 
- \newpage
+\textbf{Week2:} Refinement of requirements (including categorisation)
+
+\begin{itemize}
+  \item MoSCoW prioritisation and effort estimation for requirements
+  \item Begin thinking about use cases
 
 
-\begin{landscape}
-\subsection{Sketches}
- \begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.3\textheight]{app4.png}
-      \caption{First generation hand-drawn sketches}
- \end{figure}
-\end{landscape}
-
- \newpage
-
-\begin{landscape}
- \begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.3\textheight]{app3.png}
-      \caption{Sketches based on researched personas}
- \end{figure}
-  \end{landscape}
-
-\newpage
-
-\begin{landscape}
-\subsection{Storyboards}
- \begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.3\textheight]{app2.png}
-      \caption{Storyboard example describing a possible user experience}
- \end{figure}
-
- \newpage
-
-\subsection{Wire-Framing}
-\begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=1.3\textheight]{app1.png}
-      \caption{Down selection of wire-frames}
- \end{table}
-  \end{landscape}
-\subsection{IXN Poll}
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{Poll1.png}
-      \caption{IXN poll example page 1.}
- \end{figure}
-
- \begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{Poll2.png}
-      \caption{IXN poll example page 2.}
- \end{figure}
-
- \begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{Poll3.png}
-      \caption{IXN poll example page 3.}
- \end{figure}
-
-\subsection{IXN-Poll-Results}
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{PollResults.png}
-      \caption{Down selection of wire-frames.}
- \end{figure}
+\end{itemize}
 
 
- \newpage
+\textbf{Week 3:} Continue developing use cases
 
-\subsection{Known Bugs}
- \begin{table}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.99\textwidth]{App7.png}
-      \caption{Know bugs description and importance}
- \end{table}
+\begin{itemize}
+  \item Need to consider who stakeholders for the app are (company, renters of tools).
+  \item The application should be designed as a web app – for use in a browser and mobile.
+  \item Phoebe to share UML 2.0 book to use for UML syntax / diagrams.
+  \item Daiana to act as SCRUM master for project.
+
+
+\end{itemize}
+
+
+\textbf{Plan for next meeting}
+
+To meet every Tuesday 11am - 1pm, possibly in room in Foster Court.
+
+Next Meeting to bring post-its (!) to help organise requirements visually.
+
+\textbf{Meeting 2: 30th Jan 2018}
+
+
+
+\begin{itemize}
+  \item This week focus on use cases and organise requirements.
+  \item Brief discussions of Object oriented diagrams, sequence diagrams, activity diagrams
+  \item Came up with non-functional requirements for the project
+  \item Came up with non-functional requirements for the project
+ 
+\end{itemize}
+
+
+
+\textbf{First Meeting with Rae}
+
+Review of vision and scope
+
+Suggested we should convert requirements to excel and number them
+
+She suggested that performance tests run on key functions can help determine non-functional requirements in an actual implementation
+
+\textbf{Meeting 3: 6th Feb 2018}
+
+\textbf{Discussed:}
+Actors:
+
+User – anyone that interacts with the system, Customer, Employee, Admin, Customer Support, Credit Card Company, Delivery service, Notification Service, Database
+
+To Do this Week:
+\begin{itemize}
+  \item Finish writing up Use Cases and make sure they match names on use case diagram
+  \item Finish analysis class diagram
+
+\end{itemize}
+
+\textbf{Meeting 4: 13th Feb 2018}
+
+\begin{itemize}
+  \item Refining Use-cases
+  \item Discussion about state machine diagrams- Rae gave some examples and the group plans to review these
+  \item Class diagrams- inclusion of getters and setters
+  \item Sequence diagrams- making sure they are consistent with class diagrams
+
+
+\end{itemize}
+
+\textbf{Meeting 5: 6th March 2018}
+
+\begin{itemize}
+	\item Discussion of analysis and design class diagrams final changes- adding JSP/JavaClass notation to design and Boundary, Controller, Entity notation to the analysis class diagrams
+	\item Discussion of final modification for sequence diagrams
+	\item Clarification about deployment diagrams- modelling how a three tier architecture system would be deployed
+
+\end{itemize}
+
+\textbf{Meeting 6: 15th March 2018}
+
+\begin{itemize}
+	\item Final diagrams discussed 
+	\item Discussion of report section allocation
+	\item Discussion of presentation assembly
+
+\end{itemize}
+
+
+
+
+\subsubsection{Appendix 1 subsection}
+
+\begin{enumerate}
+
+  \item one
+  \item two
+  \item three
+  \item four
+
+\end{enumerate}
+
+
+\subsection{Appendix 2}
+
+\subsection{Appendix 3}
+
+
+
+
 
 
 \end{document}

@@ -1,5 +1,3 @@
-
-
 # Application Mock-up
 
 ## User Manual
@@ -14,10 +12,4 @@ Content Content Content Content Content Content Content Content Content Content 
 
 Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content 
 
-
-\begin{figure}[H]
-      \centering
-      \includegraphics[trim = 0 0 0 0, clip, width=0.8\textwidth]{TempImg/logoucl.png}
-      \caption{Image example}
- \end{figure}
 
