@@ -14,7 +14,7 @@
 
 This report will elaborate on the process used by Group A to design the DIY Tool Hire Service.  The assignment was completed following the use-case driven Unified Software Development Process (USDP)[1].  
 
-The iterative nature of the USDP resulted in multiple evolutions at every step in the process.  While each aspect of development – from the requirements gathering and use cases to the object-oriented diagrams – underwent several iterations, only the final iterations have been included within the report.  All of the diagrams found in this report were completed in Unified Modeling Language (UML) format, the industry standard.
+The iterative nature of the USDP resulted in multiple evolutions at every step in the process.  While each aspect of development – from the requirements gathering and use cases to the object-oriented diagrams – underwent several iterations, only the final iterations have been included within the report.  All of the core diagrams found in this report were completed in Unified Modeling Language (UML) format, the industry standard.
 
 This chapter of the report will contain the problem statement, a description of the scope of the project, a glossary of terms used throughout the report, and a Gantt chart to display the project timeline followed by the team.  Following these sections is a summary of the project management style. The subsequent chapters will cover the topics of requirements gathering, use case development, object-oriented analysis, and application mockups.  Every stage of the development process prior to the delivery of a minimum viable product (MVP) was completed.
 
@@ -51,7 +51,7 @@ In order to be clear and consistent throughout the project, specific words and p
  \end{table}
 
 ## Gantt Chart
-The Gantt charted shown below displays the project timeline followed by the team.
+The Gantt charted shown below displays the project timeline followed by the team. It is divided into the four project phases outlined in the Unified Process: \textit{Inception, Elaboration, Construction and Transition}.
 
 \begin{figure}[H]
       \centering
@@ -61,17 +61,16 @@ The Gantt charted shown below displays the project timeline followed by the team
 
 ## Project Management: SCRUM Embedded Unified Process
 
- The Unified Process or UP was developed in the 1990s and is a pragmatic and tested method for carrying out the development of a software system and was designed specifically for use with UML. Essentially, it is a process by which the who, what, and when of a development can be determined. [2] The three main principles of the UP are:
+ The Unified Process or UP was developed in the 1990s and is a pragmatic and tested method for carrying out the development of a software system and was designed specifically for use with UML. Essentially, it is a process by which the \textit{who, what, and when} of a development project can be determined [2]. The three main principles of the UP are:
 
  \begin{itemize}
   \item The development process should be driven by use-cases and risk assessment
-  \item Components related to the Warehouse management. It manages which tools are available and in which quantity.
   \item The development process should emphasize a quality system architectural model 
   \item Software should be developed via step-wise completion of subprojects and continuous refinement through iteration
 \end{itemize}
 
 
-Within each iteration, five workflows are explicitly defined by the UP. These are requirements, analysis, design, implementation and testing. (UP book) The broader project lifecycle is also covered in the UP and is made up of four distinct phases which are inception, elaboration, construction and transition. Within each of these phases, multiple iterations should take place to suit the projects needs. Figure 1.2 illustrates how all of the elements of the UP are tied together into a single project lifecycle. 
+Within each iteration, five workflows are explicitly defined by the UP. These are Requirements, Analysis, Design, Implementation and Testing [2]. The broader project lifecycle is also covered in the UP and is made up of four distinct phases which are Inception, Elaboration, Construction and Transition. Within each of these phases, multiple iterations should take place to suit the project's needs. Figure 1.2 illustrates how all of the elements of the UP are tied together into a single project lifecycle. 
 
 \begin{figure}[H]
       \centering
@@ -79,7 +78,7 @@ Within each iteration, five workflows are explicitly defined by the UP. These ar
       \caption{Outline of the Unified Process project lifecycle [2]}
  \end{figure}
 
-SCRUM is a subset of Agile and is project management framework that grew out of the failures of previous models such as the Waterfall model. There are three empirical pillars that uphold any SCRUM project. [3] These are: 
+SCRUM is a subset of Agile and is project management framework that grew out of the failures of previous models such as the Waterfall model. There are three empirical pillars that uphold any SCRUM project [3]. These are: 
 
 \textbf{Transparency:} common standards are agreed upon within a team in order to avoid ambiguity.
 
@@ -90,9 +89,9 @@ SCRUM is a subset of Agile and is project management framework that grew out of 
 These pillars underpin the SCRUM project lifecycle approach which involves:
 
 \begin{enumerate}
-  \item The Scrum team meets in order to prioritize the artifacts in product backlog. This could be a list of required features for a product.
-  \item Before a Sprint begins, the team has a Sprint planning meeting to decide what work will be done during the sprint.
-  \item  The team does a backlog refinement to confirm that the project is still on track before beginning the Sprint to ensure that work will not be wasted.
+  \item The SCRUM team meets in order to prioritize the artifacts in product Backlog. This could be a list of required features for a product.
+  \item Before a Sprint begins, the team has a Sprint planning meeting to decide what work will be done during the Sprint.
+  \item  The team does a Backlog refinement to confirm that the project is still on track before beginning the Sprint to ensure that work will not be wasted.
   \item  During the 2-4 week Sprint, the team has daily meetings which are short, lasting only 15 minutes or less. 
   \item At the end of each sprint, the team members present their work and have a Sprint Retrospective to analyze what could be improved during the next sprint. [4]
 \end{enumerate}
@@ -103,11 +102,11 @@ These pillars underpin the SCRUM project lifecycle approach which involves:
       \caption{The SCRUM project lifecycle [4]}
  \end{figure}
 
-For the DIY THS project, the team utilized both of these methodologies where they were suitable. The broader project lifecycle was shaped by the tenants of the Unified process, while more day-to-day project management was derived from some useful features of SCRUM.  
+For the DIY THS project, the team utilized both of these methodologies where they were suitable. The broader project lifecycle was shaped by the tenants of the Unified Process, while more day-to-day project management was derived from some useful features of SCRUM.  
 
-The UP identifies that emphasizing system architecture and developing based on use-cases leads to successful products. This was integral to the development of the THS system. Given that the implementation was not carried out for the THS, the team had the opportunity to rigorously refine and identify essential use cases. From these use-cases, object oriented (OO) UML models were derived. After the essential system objectives were laid out through OO models, the architecture was modeled. Additionally, the THS team made use of the four phases of the Unified Process to help structure project progress which is illustrated in the Gantt chart in Section 1.6. 
+The UP identifies that emphasizing system architecture and developing based on use-cases leads to successful products. This was integral to the development of the THS system. Given that the implementation was not carried out for the THS, the team had the opportunity to rigorously refine and identify essential use cases. From these use cases, object-oriented (OO) UML models were derived. After the essential system objectives were laid out through OO models, the architecture was modelled. Additionally, the THS team made use of the four phases of the Unified Process to help structure project progress which is illustrated in the Gantt chart in Section 1.6. 
 
-While the team did not assign official SCRUM roles, certain useful aspects of SCRUM were adopted. Early in the project, the team developed a backlog of the tasks that needed to be accomplished throughout the semester. Then, to fulfill these goals, the team worked in 1 week Sprints followed by Retrospectives to assess the challenges encountered in the previous week and plan the next Sprint. Additionally, transparency and standardized communication was essential for such a large group project and as such, a team glossary was used throughout. 
+While the team did not assign official SCRUM roles, certain useful aspects of SCRUM were adopted. Early in the project, the team developed a Backlog of the tasks that needed to be accomplished throughout the semester. Then, to fulfill these goals, the team worked in 1 week Sprints followed by Retrospectives to assess the challenges encountered in the previous week and plan the next Sprint. Additionally, transparency and standardized communication were essential for such a large group project and as such, a team glossary was used throughout. 
 
 Both the UP and SCRUM outline the importance of iteration, which was the absolute core of the THS project. During the weekly Retrospectives, analysis of the previous weeks work was done by the team members and the project supervisor, which shed light on improvements to be made on the current work products. In many cases, several Sprints were used to refine a single work product. 
 

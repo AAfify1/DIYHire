@@ -22,7 +22,7 @@ When brainstorming the potential list of use cases, it was necessary for the tea
 
 ## Use Case Diagram
 
-The use case listing from above was translated into a use case diagram.  The diagram presents the use cases in a more clearly illustrated manner. The team utilized the \textit{extend} relationship as a way to add optional behaviours to certain use cases, as well as the \textit{include} relationship to simplify larger use cases into more manageable parts [9].
+The use case listing from above was translated into a use case diagram.  The diagram presents the use cases in a more clearly illustrated manner. The team utilized the \textit{<<extend>>} relationship as a way to add optional behaviours to certain use cases, as well as the \textit{<<include>>} relationship to simplify larger use cases into more manageable parts [9].
 
 \begin{figure}[H]
       \centering
@@ -33,7 +33,7 @@ The use case listing from above was translated into a use case diagram.  The dia
 
 ## Use Case Specifications
 
-Continuing the development process, the team took the use cases depicted above and provided a much more detailed information for each including a description, the actors involved, pre- and post-conditions, as well as the main and alternative flows.  As the use case specifications were written, further alterations took place with the list of use cases.  The list of use cases was refined, and the specifications continuously updated throughout the project as more thought went into the behaviours of the actors.  The following specifications for the finalized list of use cases played a key role in the upcoming design period of the project [8].
+Continuing the development process, the team took the use cases depicted above and provided much more detailed information for each including a description, the actors involved, pre- and post-conditions, as well as the main and alternative flows.  As the use case specifications were written, further alterations took place with the list of use cases.  The list of use cases was refined, and the specifications continuously updated throughout the project as more thought went into the behaviours of the actors.  The following specifications for the finalized list of use cases played a key role in the upcoming design period of the project [8].
 
 \begin{figure}[H]
       \centering

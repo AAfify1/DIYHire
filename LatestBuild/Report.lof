@@ -14,44 +14,98 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Use case/Requirements matrix to describe how use cases fulfill system requirements\relax }}{26}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Key for activity diagram symbols\relax }}{27}{figure.caption.37}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Key for activity diagram symbols\relax }}{28}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Activity diagram for UC7:Creates Order\relax }}{28}{figure.caption.38}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Activity diagram for UC7:Creates Order\relax }}{29}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Activity diagram for UC1: Creates Account\relax }}{28}{figure.caption.39}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Activity diagram for UC1: Creates Account\relax }}{29}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Activity diagram for UC8: Checks Out\relax }}{29}{figure.caption.40}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Activity diagram for UC8: Checks Out\relax }}{30}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Activity diagram for UC6: Manages Tool Listings\relax }}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Activity diagram for UC6: Manages Tool Listings\relax }}{31}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces A model of Boundary-Control-Entity architecture [11]\relax }}{31}{figure.caption.42}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A model of Boundary-Control-Entity architecture [11]\relax }}{32}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Analysis Class Diagram\relax }}{32}{figure.caption.43}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Class diagram key\relax }}{32}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Design Class Diagram\relax }}{34}{figure.caption.44}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Analysis Class Diagram\relax }}{33}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Sequence diagram symbol key\relax }}{35}{figure.caption.45}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Design Class Diagram\relax }}{35}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Sequence diagram for adding a new tool listing to the THS system. This is a version of UC6: Manages Tool Listing\relax }}{36}{figure.caption.46}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sequence diagram symbol key\relax }}{38}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Sequence diagram for registering a new customer to the THS system. This is a version of UC1: Creates Account\relax }}{36}{figure.caption.47}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Sequence diagram for adding a new tool listing to the THS system. This is a version of UC6: Manages Tool Listing\relax }}{39}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Sequence diagram for creating an order in the THS system. This is a version of UC7: Creates Order\relax }}{37}{figure.caption.48}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Sequence diagram for registering a new customer to the THS system. This is a version of UC1: Creates Account\relax }}{39}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Sequence diagram for checking out. This is a version of UC8: Checks Out\relax }}{38}{figure.caption.49}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Sequence diagram for creating an order in the THS system. This is a version of UC7: Creates Order\relax }}{40}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Sequence diagram for an admin creating a blog post. This is a version of UC23: Posts Advice Blog & Video Tutorials\relax }}{39}{figure.caption.50}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Sequence diagram for checking out. This is a version of UC8: Checks Out\relax }}{41}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Sequence diagram for a customer entering a query into the THS system. This is a version of UC19: Raises Query\relax }}{39}{figure.caption.51}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Sequence diagram for an admin creating a blog post. This is a version of UC23: Posts Advice Blog & Video Tutorials\relax }}{42}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces State machine diagram for a tool rental\relax }}{40}{figure.caption.52}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Sequence diagram for a customer entering a query into the THS system. This is a version of UC19: Raises Query\relax }}{42}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces State machine diagram for an order\relax }}{41}{figure.caption.53}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces State machine diagram for a tool rental\relax }}{43}{figure.caption.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces State machine diagram for an order\relax }}{41}{figure.caption.54}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces State machine diagram for an order\relax }}{44}{figure.caption.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces System components diagram\relax }}{43}{figure.caption.55}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces State machine diagram for a shopping basket\relax }}{44}{figure.caption.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Three tiers for the THS system\relax }}{44}{figure.caption.56}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces System components diagram\relax }}{46}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Deployment diagram\relax }}{45}{figure.caption.57}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Three tiers for the THS system\relax }}{47}{figure.caption.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Deployment diagram\relax }}{48}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Home page for DIY THS\relax }}{49}{figure.caption.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Create new account or log in page for DIY THS\relax }}{49}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Customer registration page for DIY THS\relax }}{50}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Log-in page for DIY THS\relax }}{50}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Password recovery page for DIY THS\relax }}{51}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Manage Account page for DIY THS\relax }}{51}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Check Categories for DIY THS\relax }}{52}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Checks for Delivery Qualification page for DIY THS\relax }}{53}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Shopping Basket/Creates Order page for DIY THS\relax }}{53}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Check out and payment details page for DIY THS\relax }}{54}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Confirm order page for DIY THS\relax }}{54}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Raises Query page for DIY THS\relax }}{55}{figure.caption.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Blog page for DIY THS\relax }}{55}{figure.caption.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Log out page for DIY THS\relax }}{56}{figure.caption.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Employee Login page for DIY THS\relax }}{56}{figure.caption.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Employee View for DIY THS\relax }}{57}{figure.caption.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Add Tools page for DIY THS\relax }}{57}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Add New Blog Entry page for DIY THS\relax }}{58}{figure.caption.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Reply To Query page for DIY THS\relax }}{58}{figure.caption.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Successes and challenges for Group A.\relax }}{60}{figure.caption.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces First iteration of design class diagram\relax }}{65}{figure.caption.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Second iteration of design class diagram\relax }}{66}{figure.caption.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces First iteration of "Creates Order" sequence diagram\relax }}{67}{figure.caption.83}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Second iteration of "Creates Order" sequence diagram\relax }}{67}{figure.caption.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces First iteration of "Checks Out" sequence diagram\relax }}{68}{figure.caption.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Second iteration of "Checks Out" sequence diagram\relax }}{69}{figure.caption.86}

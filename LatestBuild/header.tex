@@ -188,6 +188,8 @@
 
 \newcommand{\StudentNameH}{Phoebe Staab}
 
+\newcommand{\Space}{   }
+
 \newcommand{\SupervisorNameA}{Rae Harbird}
 \newcommand{\SupervisorEmailA}{r.harbird@ucl.ac.uk}
 
@@ -332,7 +334,7 @@
 % TITLE SECTION
 %----------------------------------------------------------------------------------------
     \horrule{0.5pt} \\[0.4cm]
-    \includegraphics[width = 0.7\textwidth]{\THS}\\[0.5cm]
+    \includegraphics[width = 0.85\textwidth]{\THS}\\[0.5cm]
     % \huge \textbf{\AssignmentTitle} \\
     \horrule{2pt} \\[0.5cm]
 
@@ -361,6 +363,7 @@
     \textbf{\StudentNameB} \\
     \textbf{\StudentNameC} \\
     \textbf{\StudentNameD}
+    \textbf{\Space}
   \end{flushleft}
 \end{minipage}\qquad
 \begin{minipage}{0.4\textwidth}
@@ -370,8 +373,11 @@
     \textbf{\StudentNameF} \\
     \textbf{\StudentNameG} \\
     \textbf{\StudentNameH}
+    \textbf{\Space}
   \end{flushleft}
 \end{minipage}\qquad
+
+  \\[0.5cm]
 
 
 %----------------------------------------------------------------------------------------
@@ -397,18 +403,26 @@
 % -----------------------------------------------------------------------------------
 %                                ABSTRACT
 % -----------------------------------------------------------------------------------
-
-\addcontentsline{toc}{section}{Abstract}
+\renewcommand{\abstractname}{Executive Summary}
+\addcontentsline{toc}{section}{Executive Summary}
 \begin{abstract}
-  An abstract goes here.
+
+The key objective of this body of work is to illustrate the process by which Group A designed the core functionalities of the web-based DIY Tool Hire Service (THS) application. During the ideation stage of the project, the team identified the scope of the project and the core requirements of the DIY THS. Through the use of a SCRUM embedded Unified Process workflow, the team developed a blue print for the application from requirements and use case evaluation through to object-oriented analysis and prototype design. These achievements were possible through the use of the Unified Modelling Language (UML) as the medium through which information was shared. 
+
+Keeping with the tenants of the Unified Process, requirements and use cases were at the core of all system designs. As such, the development of the key requirements of the system and the use cases through which they are performed were developed through a rigorous and iterative process over several weeks. The results of this effort can be seen and explored further in Chapter 1. These served as a guide for the subsequent object-oriented analysis and architecture design. 
+
+During the object-oriented analysis of the DIY THS, the team kept with the aforementioned iterative approach. After the development of plain-English activity diagrams for key use-cases, the team endeavored to create some basic pseudo code to carry out such processes. This lead to the development of class diagrams which were, again, use-case driven. The development of the design class diagram and sequence diagrams were closely linked and iterated over for several weeks to ensure consistency between the models. The design class diagram and the objects contained within it were predecessors to the development of state-machine diagrams.
+
+The system architecture was explored through the use of further UML models such as component and deployment diagrams. The DIY THS would be implemented on a three-tier architectural model which is discussed in more detail along with the architectural UML models in Chapter 4. 
+
+Finally, a mock-up of prototype designs is presented at the close of this work to bring the UML models to life. These illustrations also help to emphasize the particulars of the role of the presentation tier in the three-tier system. Alongside the figures in Chapter 5 are detailed descriptions of the use-cases related to their respective mock-up designs. 
+
+While future iterations of this work would not only be possible, but encouraged before implementation, this report ultimately gives a realistic and pragmatic proposed approach to the development of a web-based tool hire service. 
+
 
 \end{abstract}
 \newpage
 
-\addcontentsline{toc}{section}{Acknowledgements}
-\section*{Acknowledgements}\label{acknowledgements}
-The acknowledgement goes here.
-\newpage
 % -----------------------------------------------------------------------------------
 %                              TABLE OF CONTENTS
 % -----------------------------------------------------------------------------------
@@ -434,12 +448,7 @@ The acknowledgement goes here.
 \textbf{OO}: Object oriented \\
 \textbf{UP}: Unified Process \\
 \textbf{UC}: Use case \\
-\textbf{UCL}: Univeristy College London \\
-\textbf{UCL}: Univeristy College London \\
-\textbf{UCL}: Univeristy College London \\
-\textbf{UCL}: Univeristy College London \\
-\textbf{UCL}: Univeristy College London \\
-\textbf{UCL}: Univeristy College London \\
+\textbf{UML}: Unified Modelling Language\\
 
 
 
